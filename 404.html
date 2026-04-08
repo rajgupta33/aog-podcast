@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Moved | The Attitude of Gratitude Podcast</title>
+  <meta name="robots" content="noindex" />
+  <script>
+    // SEO redirect: old episode URLs → new slug URLs
+    const redirects = {
+  "/episode-1.html": "/episodes/passion-over-comfort/",
+  "/episode-2.html": "/episodes/not-healing-after-trying-everything/",
+  "/episode-3.html": "/episodes/happiness-is-something-you-unlock/",
+  "/episode-4.html": "/episodes/biggest-opportunity-ecommerce-dubai-2026/",
+  "/episode-5.html": "/episodes/childs-future-shaped-before-age-6/",
+  "/episode-6.html": "/episodes/we-hurt-people-we-care-about/",
+  "/episode-7.html": "/episodes/pet-trying-to-tell-you-something/",
+  "/episode-8.html": "/episodes/uncomfortable-talking-about-periods/",
+  "/episode-9.html": "/episodes/child-not-listening-watching-you/",
+  "/episode-10.html": "/episodes/angel-numbers-telling-you-something/",
+  "/episode-11.html": "/episodes/child-isnt-struggling-system-is/",
+  "/episode-12.html": "/episodes/sleeping-on-floor-to-building-stage-dubai/",
+  "/episode-13.html": "/episodes/one-moment-can-change-your-life/",
+  "/episode-14.html": "/episodes/problems-are-energy-imbalances/"
+    };
+    const path = window.location.pathname.replace(/\/+$/, '') || '/';
+    const target = redirects[path] || redirects[path + '.html'];
+    if (target) {
+      window.location.replace(target);
+    }
+  </script>
+  <meta http-equiv="refresh" content="2;url=/" />
+  <style>
+    body { background: #080810; color: #fff; font-family: sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; }
+    a { color: #ff2d78; }
+  </style>
+</head>
+<body>
+  <div>
+    <p style="font-size: 4rem;">🔄</p>
+    <h1>Page Moved</h1>
+    <p>Redirecting you to the new location…</p>
+    <p><a href="/">Back to Home</a></p>
+  </div>
+</body>
+</html>

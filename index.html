@@ -35,6 +35,7 @@
         align-items: center !important;
         justify-content: center !important;
       }
+
       .hero-actions .button {
         width: auto !important;
         flex: 1 1 0% !important;
@@ -44,56 +45,69 @@
         font-size: 0.8rem !important;
         white-space: nowrap !important;
       }
+
       .responsive-grid-3 {
         grid-template-columns: 1fr !important;
         gap: 16px !important;
       }
-      .card-outline, .card-solid {
+
+      .card-outline,
+      .card-solid {
         min-width: 0 !important;
         width: 100% !important;
         box-sizing: border-box !important;
       }
+
       .hero-copy {
         align-items: center !important;
         text-align: center !important;
       }
+
       .hero-copy h1 {
         font-size: clamp(2.6rem, 10vw, 3.4rem) !important;
       }
+
       .section-heading {
         text-align: center !important;
         margin-left: auto !important;
         margin-right: auto !important;
       }
+
       .section-heading-row {
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
       }
+
       .footer-grid {
         grid-template-columns: 1fr !important;
         text-align: center !important;
       }
+
       .lead-magnet-card {
         flex-direction: column !important;
         text-align: center !important;
       }
-      .lead-magnet-card > div {
+
+      .lead-magnet-card>div {
         flex: 1 1 auto !important;
         min-width: 0 !important;
         max-width: 100% !important;
       }
+
       .lead-magnet-card .button {
         width: 100% !important;
         box-sizing: border-box !important;
         white-space: normal !important;
         line-height: 1.4 !important;
       }
+
       .episodes-cta-btns {
         flex-direction: column !important;
         align-items: center !important;
         gap: 12px !important;
       }
+
       .episodes-cta-btns .button {
         width: 100% !important;
         max-width: 320px !important;
@@ -109,7 +123,7 @@
   <!-- ── HEADER ─────────────────────────────────────── -->
   <header class="site-header">
     <nav class="navbar" style="padding: 12px 4%; width: 100%;">
-      <a class="brand" href="index.html#" aria-label="The Attitude of Gratitude home">
+      <a class="brand" href="/" aria-label="The Attitude of Gratitude home">
         <img class="brand-logo" src="logo.png" alt="The Attitude of Gratitude Podcast" />
         <div class="brand-text">
           <span class="brand-text-top">THE ATTITUDE OF</span>
@@ -122,12 +136,12 @@
       </button>
 
       <div class="nav-links">
-        <a href="index.html#episodes">Episodes</a>
-        <a href="index.html#watch">Our Presence</a>
-        <a href="index.html#host">The Host</a>
-        <a href="index.html#who">About</a>
-        <a href="collab-booking.html#apply">Partnerships</a>
-        <a class="button button-small" href="collab-booking.html">👉 Get Featured</a>
+        <a href="/episodes/">Episodes</a>
+        <a href="/" data-scroll="watch">Our Presence</a>
+        <a href="/" data-scroll="host">The Host</a>
+        <a href="/" data-scroll="who">About</a>
+        <a href="/collab-booking/" data-scroll="apply">Partnerships</a>
+        <a class="button button-small" href="/collab-booking/">👉 Get Featured</a>
       </div>
     </nav>
   </header>
@@ -157,12 +171,14 @@
           </h1>
 
           <p class="hero-subtext fade-up delay-3">
-            Conversations with founders, creators, and leaders who've built something real — the lessons they don't post about, told straight.
+            Conversations with founders, creators, and leaders who've built something real — the lessons they don't post
+            about, told straight.
           </p>
 
           <div class="hero-actions fade-up delay-3">
-            <a class="button" href="#episodes">LATEST EPISODE</a>
-            <a class="button" href="https://whatsapp.com/channel/0029Vb6iYal72WTnRzFtSl0H" target="_blank" rel="noopener noreferrer">JOIN COMMUNITY</a>
+            <a class="button" href="/episodes/">LATEST EPISODE</a>
+            <a class="button" href="https://whatsapp.com/channel/0029Vb6iYal72WTnRzFtSl0H" target="_blank"
+              rel="noopener noreferrer">JOIN COMMUNITY</a>
           </div>
 
 
@@ -177,7 +193,7 @@
             <div class="cf-stage" id="cfStage">
 
               <div class="cf-card" data-idx="0">
-                <img src="guest images/DSC00250.webp" alt="Guest" />
+                <img src="guest images/raina.webp" alt="Guest" />
                 <div class="cf-shade"></div>
               </div>
 
@@ -197,7 +213,7 @@
               </div>
 
               <div class="cf-card" data-idx="4">
-                <img src="guest images/DSC01994.webp" alt="Guest" />
+                <img src="guest images/meher rupa.webp" alt="Guest" />
                 <div class="cf-shade"></div>
               </div>
 
@@ -207,7 +223,7 @@
               </div>
 
               <div class="cf-card" data-idx="6">
-                <img src="guest images/DSC02537.webp" alt="Guest" />
+                <img src="guest images/shamin.webp" alt="Guest" />
                 <div class="cf-shade"></div>
               </div>
 
@@ -229,7 +245,8 @@
         <div class="section-heading">
           <p class="eyebrow"><span>Trusted Presence</span></p>
           <h2>Where serious listeners<br />come to grow</h2>
-          <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">Rated among the top business podcasts across every major platform — by listeners who build things that matter.</p>
+          <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">Rated among the top
+            business podcasts across every major platform — by listeners who build things that matter.</p>
         </div>
         <div class="platform-cards fade-scroll">
           <article class="listen-card scale-hover">
@@ -237,7 +254,8 @@
               <img src="icons/youtube.webp" alt="YouTube" />
             </div>
             <p class="listen-desc">Watch powerful founder stories and real business conversations.</p>
-            <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer" class="listen-btn">Subscribe</a>
+            <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer"
+              class="listen-btn">Subscribe</a>
           </article>
 
           <article class="listen-card scale-hover">
@@ -245,7 +263,8 @@
               <img src="icons/spotify.webp" alt="Spotify" />
             </div>
             <p class="listen-desc">Learn on the go with high-impact business insights.</p>
-            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank" rel="noopener noreferrer" class="listen-btn">Follow</a>
+            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank"
+              rel="noopener noreferrer" class="listen-btn">Follow</a>
           </article>
 
           <article class="listen-card scale-hover">
@@ -253,7 +272,8 @@
               <img src="icons/apple podcast.webp" alt="Apple Podcasts" />
             </div>
             <p class="listen-desc">Seamless listening for deep, focused growth.</p>
-            <a href="https://podcasts.apple.com/us/podcast/attitude-of-gratitude/id1866928542" target="_blank" rel="noopener noreferrer" class="listen-btn">Follow</a>
+            <a href="https://podcasts.apple.com/us/podcast/attitude-of-gratitude/id1866928542" target="_blank"
+              rel="noopener noreferrer" class="listen-btn">Follow</a>
           </article>
 
           <article class="listen-card scale-hover">
@@ -261,7 +281,8 @@
               <img src="icons/audible logo.webp" alt="Amazon Music & Audible" />
             </div>
             <p class="listen-desc">Immersive long-form conversations that stay with you.</p>
-            <a href="https://music.amazon.com/podcasts/5baef2ba-a9e9-4d23-8abf-ae8627404065/attitude-of-gratitude" target="_blank" rel="noopener noreferrer" class="listen-btn">Listen</a>
+            <a href="https://music.amazon.com/podcasts/5baef2ba-a9e9-4d23-8abf-ae8627404065/attitude-of-gratitude"
+              target="_blank" rel="noopener noreferrer" class="listen-btn">Listen</a>
           </article>
         </div>
       </div>
@@ -274,14 +295,17 @@
           <div style="flex: 1 1 400px;">
             <p class="eyebrow"><span>Featured Episodes</span></p>
             <h2>Not Just Podcasts — These Are Wake-Up Calls</h2>
-            <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">Raw, unfiltered conversations with founders, creators, and leaders sharing what actually works — and what doesn’t.</p>
+            <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">Raw, unfiltered
+              conversations with founders, creators, and leaders sharing what actually works — and what doesn’t.</p>
           </div>
-          <a class="text-link" href="#apply" style="white-space: normal; text-align: right; flex: 0 1 350px; margin-bottom: 4px;">Start with one episode. You’ll stay for the mindset shift.</a>
+          <a class="text-link" href="/collab-booking/" data-scroll="apply"
+            style="white-space: normal; text-align: right; flex: 0 1 350px; margin-bottom: 4px;">Start with one episode.
+            You’ll stay for the mindset shift.</a>
         </div>
         <div class="swiper episode-slider fade-scroll">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="episode-1.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/passion-over-comfort/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/1.webp" alt="Episode 1" />
                   <span class="play-badge">▶</span>
@@ -293,7 +317,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-2.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/not-healing-after-trying-everything/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/14.webp" alt="Episode 2" />
                   <span class="play-badge">▶</span>
@@ -305,7 +329,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-3.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/happiness-is-something-you-unlock/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/2.webp" alt="Episode 3" />
                   <span class="play-badge">▶</span>
@@ -317,7 +341,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-4.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/biggest-opportunity-ecommerce-dubai-2026/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/3.webp" alt="Episode 4" />
                   <span class="play-badge">▶</span>
@@ -329,7 +353,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-5.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/childs-future-shaped-before-age-6/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/5.webp" alt="Episode 5" />
                   <span class="play-badge">▶</span>
@@ -341,7 +365,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-6.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/we-hurt-people-we-care-about/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/6.webp" alt="Episode 6" />
                   <span class="play-badge">▶</span>
@@ -353,7 +377,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-7.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/pet-trying-to-tell-you-something/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/7.webp" alt="Episode 7" />
                   <span class="play-badge">▶</span>
@@ -365,7 +389,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-8.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/uncomfortable-talking-about-periods/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/8.webp" alt="Episode 8" />
                   <span class="play-badge">▶</span>
@@ -377,7 +401,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-9.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/child-not-listening-watching-you/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/9.webp" alt="Episode 9" />
                   <span class="play-badge">▶</span>
@@ -389,7 +413,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-10.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/angel-numbers-telling-you-something/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/10.webp" alt="Episode 10" />
                   <span class="play-badge">▶</span>
@@ -401,7 +425,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-11.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/child-isnt-struggling-system-is/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/11.webp" alt="Episode 11" />
                   <span class="play-badge">▶</span>
@@ -413,7 +437,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-12.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/sleeping-on-floor-to-building-stage-dubai/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/12.webp" alt="Episode 12" />
                   <span class="play-badge">▶</span>
@@ -425,7 +449,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-13.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/one-moment-can-change-your-life/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/13.webp" alt="Episode 13" />
                   <span class="play-badge">▶</span>
@@ -437,7 +461,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="episode-14.html" class="episode-card card-solid scale-hover ds-block">
+              <a href="/episodes/problems-are-energy-imbalances/" class="episode-card card-solid scale-hover ds-block">
                 <div class="episode-thumb">
                   <img src="thumbnails/4.webp" alt="Episode 14" />
                   <span class="play-badge">▶</span>
@@ -456,10 +480,14 @@
 
         <!-- CTA BELOW SLIDER -->
         <div class="fade-scroll episodes-cta" style="text-align: center; margin-top: 60px;">
-          <h2 class="episodes-cta-heading" style="font-family: var(--font-display); font-size: clamp(1.5rem, 6vw, 2.5rem); margin-bottom: 24px;">Explore More Episodes &rarr;</h2>
+          <h2 class="episodes-cta-heading"
+            style="font-family: var(--font-display); font-size: clamp(1.5rem, 6vw, 2.5rem); margin-bottom: 24px;">
+            Explore More Episodes &rarr;</h2>
           <div class="episodes-cta-btns" style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-            <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer" class="button">👉 Watch on YouTube</a>
-            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank" rel="noopener noreferrer" class="button button-outline">👉 Listen on Spotify</a>
+            <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer"
+              class="button">👉 Watch on YouTube</a>
+            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank"
+              rel="noopener noreferrer" class="button button-outline">👉 Listen on Spotify</a>
           </div>
         </div>
       </div>
@@ -491,12 +519,14 @@
           </article>
           <article class="card-outline scale-hover" style="padding: 30px;">
             <div style="font-size: 2rem; margin-bottom: 16px;">🌍</div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--pink-bright);">EXPOSURE TO BIG THINKING</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--pink-bright);">EXPOSURE TO BIG THINKING
+            </h3>
             <p>Surround yourself with ambitious minds, bold ideas, and growth-driven perspectives.</p>
           </article>
           <article class="card-outline scale-hover" style="padding: 30px; text-align: center;">
             <div style="font-size: 2rem; margin-bottom: 16px;">⚡</div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--pink-bright);">LEARN FROM OTHERS’ MISTAKES</h3>
+            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--pink-bright);">LEARN FROM OTHERS’ MISTAKES
+            </h3>
             <p>Skip years of trial and error by understanding what works—and what doesn’t.</p>
           </article>
         </div>
@@ -512,28 +542,38 @@
         <div class="about-copy">
           <p class="eyebrow"><span>ABOUT THE HOST</span></p>
           <h2>People Don’t Follow Podcasts. They Follow Perspectives.</h2>
-          <p>The Attitude of Gratitude Podcast is led by a host who understands what it takes to build, grow, and show up in today’s fast-moving world.</p>
-          <p>Blending storytelling, personal branding, and real-world business insight, each conversation is designed to feel honest, relatable, and deeply valuable — not scripted or surface-level.</p>
+          <p>The Attitude of Gratitude Podcast is led by a host who understands what it takes to build, grow, and show
+            up in today’s fast-moving world.</p>
+          <p>Blending storytelling, personal branding, and real-world business insight, each conversation is designed to
+            feel honest, relatable, and deeply valuable — not scripted or surface-level.</p>
           <p>This isn’t about interviews. It’s about real conversations that shift how you think.</p>
-          <p style="margin-top: 16px; color: var(--pink-bright); font-weight: 600; font-style: italic;">👉 Trusted by 70,000+ growth-driven listeners</p>
+          <p style="margin-top: 16px; color: var(--pink-bright); font-weight: 600; font-style: italic;">👉 Trusted by
+            70,000+ growth-driven listeners</p>
 
           <div class="about-points" style="margin-top: 32px;">
             <div>
               <strong>🔥 Real, Unfiltered Conversations</strong>
-              <span style="display: block; font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 6px; line-height: 1.5;">No scripts. No fluff. Just honest insights from people building in the real world.</span>
+              <span
+                style="display: block; font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 6px; line-height: 1.5;">No
+                scripts. No fluff. Just honest insights from people building in the real world.</span>
             </div>
             <div>
               <strong>🚀 Built for the Ambitious</strong>
-              <span style="display: block; font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 6px; line-height: 1.5;">Every episode is designed for those who want to grow faster, think sharper, and do better.</span>
+              <span
+                style="display: block; font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 6px; line-height: 1.5;">Every
+                episode is designed for those who want to grow faster, think sharper, and do better.</span>
             </div>
             <div>
               <strong>🎯 Stories That Actually Stay With You</strong>
-              <span style="display: block; font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 6px; line-height: 1.5;">Not just content you watch — but ideas you carry forward.</span>
+              <span
+                style="display: block; font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 6px; line-height: 1.5;">Not
+                just content you watch — but ideas you carry forward.</span>
             </div>
           </div>
 
           <div style="margin-top: 40px;">
-            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank" rel="noopener noreferrer" class="button">👉 Start Listening &rarr;</a>
+            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank"
+              rel="noopener noreferrer" class="button">👉 Start Listening &rarr;</a>
           </div>
         </div>
       </div>
@@ -546,28 +586,56 @@
           <div style="flex: 1 1 400px;">
             <p class="eyebrow"><span>CONTENT PREVIEW</span></p>
             <h2>Short Clips. Big Realizations.</h2>
-            <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">Quick, powerful moments from real conversations — designed to hit you instantly and stay with you longer.</p>
+            <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">Quick, powerful moments
+              from real conversations — designed to hit you instantly and stay with you longer.</p>
           </div>
-          <a class="text-link" href="https://www.youtube.com/@AttitudeOfGratitude-x9c/shorts" target="_blank" rel="noopener noreferrer" style="white-space: normal; text-align: right; flex: 0 1 350px; margin-bottom: 4px;">👉 Scroll. Watch. Get Hooked &rarr;</a>
+          <a class="text-link" href="https://www.youtube.com/@AttitudeOfGratitude-x9c/shorts" target="_blank"
+            rel="noopener noreferrer"
+            style="white-space: normal; text-align: right; flex: 0 1 350px; margin-bottom: 4px;">👉 Scroll. Watch. Get
+            Hooked &rarr;</a>
         </div>
         <div class="reel-strip fade-scroll">
-          <article class="reel-card" style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
-            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;" src="https://www.youtube-nocookie.com/embed/58pdV87tH9c" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <article class="reel-card"
+            style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
+            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;"
+              src="https://www.youtube-nocookie.com/embed/58pdV87tH9c"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </article>
-          <article class="reel-card" style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
-            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;" src="https://www.youtube-nocookie.com/embed/hVN3j20qM98" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <article class="reel-card"
+            style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
+            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;"
+              src="https://www.youtube-nocookie.com/embed/hVN3j20qM98"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </article>
-          <article class="reel-card" style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
-            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;" src="https://www.youtube-nocookie.com/embed/Ol9r4HUPtZs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <article class="reel-card"
+            style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
+            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;"
+              src="https://www.youtube-nocookie.com/embed/Ol9r4HUPtZs"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </article>
-          <article class="reel-card" style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
-            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;" src="https://www.youtube-nocookie.com/embed/5EwQ7zOmHdc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <article class="reel-card"
+            style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
+            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;"
+              src="https://www.youtube-nocookie.com/embed/5EwQ7zOmHdc"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </article>
-          <article class="reel-card" style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
-            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;" src="https://www.youtube-nocookie.com/embed/QcnXm7U7AmY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <article class="reel-card"
+            style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
+            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;"
+              src="https://www.youtube-nocookie.com/embed/QcnXm7U7AmY"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </article>
-          <article class="reel-card" style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
-            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;" src="https://www.youtube-nocookie.com/embed/DziSLnBd5W8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <article class="reel-card"
+            style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
+            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;"
+              src="https://www.youtube-nocookie.com/embed/DziSLnBd5W8"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </article>
         </div>
       </div>
@@ -585,7 +653,8 @@
         </div>
         <div class="fade-scroll responsive-grid-3">
           <article class="card-solid scale-hover" style="padding: 30px;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">🚀 AMBITIOUS STARTUP OWNERS</h3>
+            <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">🚀 AMBITIOUS STARTUP OWNERS
+            </h3>
             <p>Learn from real founder journeys, mistakes, and strategies that actually build businesses.</p>
           </article>
           <article class="card-solid scale-hover" style="padding: 30px;">
@@ -597,21 +666,27 @@
             <p>Stories, perspectives, and conversations designed to inspire confidence, clarity, and growth.</p>
           </article>
           <article class="card-solid scale-hover" style="padding: 30px;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">📈 GROWTH-DRIVEN PROFESSIONALS</h3>
+            <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">📈 GROWTH-DRIVEN
+              PROFESSIONALS</h3>
             <p>Upgrade your mindset, decision-making, and career with insights from people who’ve done it.</p>
           </article>
           <article class="card-solid scale-hover" style="padding: 30px; text-align: center;">
             <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">🧠 LIFELONG LEARNERS</h3>
-            <p>If you believe in learning from others’ experiences, avoiding mistakes, and evolving constantly — you belong here.</p>
+            <p>If you believe in learning from others’ experiences, avoiding mistakes, and evolving constantly — you
+              belong here.</p>
           </article>
         </div>
 
         <!-- CTA BELOW SECTION -->
         <div class="fade-scroll episodes-cta" style="text-align: center; margin-top: 60px;">
-          <h2 class="episodes-cta-heading" style="font-family: var(--font-display); font-size: clamp(1.5rem, 6vw, 2.5rem); margin-bottom: 24px;">Start Watching. Start Growing.</h2>
+          <h2 class="episodes-cta-heading"
+            style="font-family: var(--font-display); font-size: clamp(1.5rem, 6vw, 2.5rem); margin-bottom: 24px;">Start
+            Watching. Start Growing.</h2>
           <div class="episodes-cta-btns" style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-            <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer" class="button">👉 Watch on YouTube</a>
-            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank" rel="noopener noreferrer" class="button button-outline">👉 Listen on Spotify</a>
+            <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer"
+              class="button">👉 Watch on YouTube</a>
+            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank"
+              rel="noopener noreferrer" class="button button-outline">👉 Listen on Spotify</a>
           </div>
         </div>
       </div>
@@ -624,10 +699,14 @@
           <div style="flex: 1 1 500px;">
             <p class="eyebrow"><span>Community</span></p>
             <h2>Don’t Just Watch. Be Part of It.</h2>
-            <p style="margin-top: 12px; max-width: 650px; color: rgba(255,255,255,0.85); line-height: 1.6;">Get exclusive insights, real-time discussions, and powerful takeaways from founders, creators, and growth-driven minds — directly on WhatsApp.</p>
+            <p style="margin-top: 12px; max-width: 650px; color: rgba(255,255,255,0.85); line-height: 1.6;">Get
+              exclusive insights, real-time discussions, and powerful takeaways from founders, creators, and
+              growth-driven minds — directly on WhatsApp.</p>
           </div>
           <div style="flex: 0 1 400px; text-align: center; width: 100%;">
-            <a href="https://whatsapp.com/channel/0029Vb6iYal72WTnRzFtSl0H" target="_blank" rel="noopener noreferrer" class="button" style="width: 100%; white-space: normal; line-height: 1.4; padding: 18px 24px; font-size: 1.05rem;">
+            <a href="https://whatsapp.com/channel/0029Vb6iYal72WTnRzFtSl0H" target="_blank" rel="noopener noreferrer"
+              class="button"
+              style="width: 100%; white-space: normal; line-height: 1.4; padding: 18px 24px; font-size: 1.05rem;">
               <i class="fab fa-whatsapp" style="font-size: 1.4rem; margin-right: 8px;"></i>
               Join Our WhatsApp Community
             </a>
@@ -643,55 +722,69 @@
   <!-- ── FOOTER ─────────────────────────────────────── -->
   <footer id="contact" class="footer">
     <div class="container footer-grid">
-      
+
       <!-- BRAND SECTION -->
       <div>
-        <a class="brand footer-brand" href="index.html#">
+        <a class="brand footer-brand" href="/">
           <img class="brand-logo" src="logo.png" alt="The Attitude of Gratitude Podcast" />
           <div class="brand-text">
             <span class="brand-text-top">THE ATTITUDE OF</span>
             <span class="brand-text-mid">GRATITUDE</span>
           </div>
         </a>
-        <p>Dubai-based podcast for founders, creators, and ambitious minds sharing real stories, insights, and lessons that build true authority.</p>
-        <p style="color: var(--pink-bright); font-style: italic; font-weight: 600; margin-top: 12px;">👉 Watch. Learn. Grow.</p>
+        <p>Dubai-based podcast for founders, creators, and ambitious minds sharing real stories, insights, and lessons
+          that build true authority.</p>
+        <p style="color: var(--pink-bright); font-style: italic; font-weight: 600; margin-top: 12px;">👉 Watch. Learn.
+          Grow.</p>
       </div>
-      
+
       <!-- QUICK LINKS -->
       <div>
         <h3 style="margin-bottom: 20px;">QUICK LINKS</h3>
         <ul>
-          <li><a href="index.html#episodes">Episodes</a></li>
-          <li><a href="index.html#watch">Watch Everywhere</a></li>
-          <li><a href="index.html#host">The Host</a></li>
-          <li><a href="index.html#who">About</a></li>
-          <li><a href="collab-booking.html#apply">Partnerships</a></li>
-          <li><a href="collab-booking.html">Apply to Get Featured</a></li>
+          <li><a href="/episodes/">Episodes</a></li>
+          <li><a href="/" data-scroll="watch">Watch Everywhere</a></li>
+          <li><a href="/" data-scroll="host">The Host</a></li>
+          <li><a href="/" data-scroll="who">About</a></li>
+          <li><a href="/collab-booking/" data-scroll="apply">Partnerships</a></li>
+          <li><a href="/collab-booking/">Apply to Get Featured</a></li>
           <li><a href="Business_License.pdf" target="_blank" download>UAE Media License & Compliance (PDF)</a></li>
         </ul>
       </div>
-      
+
       <!-- CONTACT & SOCIAL -->
       <div>
         <h3 style="margin-bottom: 20px;">CONTACT</h3>
         <ul>
-          <li><strong>📧 Email</strong><br/><a href="mailto:sadhna.attitudesmm@gmail.com" style="margin-top: 4px; display: inline-block;">sadhna.attitudesmm@gmail.com</a></li>
-          <li style="margin-top: 20px;"><strong>📱 Call / WhatsApp</strong><br/><a href="https://api.whatsapp.com/send?phone=971551252302" target="_blank" style="margin-top: 4px; display: inline-block;">+971 55 125 2302</a></li>
+          <li><strong>📧 Email</strong><br /><a href="mailto:sadhna.attitudesmm@gmail.com"
+              style="margin-top: 4px; display: inline-block;">sadhna.attitudesmm@gmail.com</a></li>
+          <li style="margin-top: 20px;"><strong>📱 Call / WhatsApp</strong><br /><a
+              href="https://api.whatsapp.com/send?phone=971551252302" target="_blank"
+              style="margin-top: 4px; display: inline-block;">+971 55 125 2302</a></li>
         </ul>
-        
+
         <h3 style="margin-top: 36px; font-size: 0.95rem; margin-bottom: 16px;">CONNECT WITH US</h3>
         <div class="social-icons" style="display: flex; gap: 16px;">
-          <a href="https://www.instagram.com/attitude_of_gratitude.ae/" target="_blank" style="font-size: 1.5rem; color: #a4a4b2; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#a4a4b2'"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/attitude-of-gratitude-podcast/?viewAsMember=true" target="_blank" style="font-size: 1.5rem; color: #a4a4b2; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#a4a4b2'"><i class="fab fa-linkedin"></i></a>
-          <a href="https://api.whatsapp.com/send?phone=971551252302" target="_blank" style="font-size: 1.5rem; color: #a4a4b2; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#a4a4b2'"><i class="fab fa-whatsapp"></i></a>
-          <a href="http://tiktok.com/@bindasssadhna" target="_blank" style="font-size: 1.5rem; color: #a4a4b2; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#a4a4b2'"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/attitude_of_gratitude.ae/" target="_blank"
+            style="font-size: 1.5rem; color: #a4a4b2; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
+            onmouseout="this.style.color='#a4a4b2'"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/attitude-of-gratitude-podcast/?viewAsMember=true" target="_blank"
+            style="font-size: 1.5rem; color: #a4a4b2; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
+            onmouseout="this.style.color='#a4a4b2'"><i class="fab fa-linkedin"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=971551252302" target="_blank"
+            style="font-size: 1.5rem; color: #a4a4b2; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
+            onmouseout="this.style.color='#a4a4b2'"><i class="fab fa-whatsapp"></i></a>
+          <a href="http://tiktok.com/@bindasssadhna" target="_blank"
+            style="font-size: 1.5rem; color: #a4a4b2; transition: color 0.3s;" onmouseover="this.style.color='#fff'"
+            onmouseout="this.style.color='#a4a4b2'"><i class="fab fa-tiktok"></i></a>
         </div>
       </div>
-      
+
     </div>
-    
+
     <!-- BOTTOM LINE -->
-    <div class="footer-bottom" style="text-align: center; border-top: 1px solid rgba(255,45,120,0.15); margin-top: 60px; padding-top: 30px; font-size: 0.85rem; color: #a4a4b2;">
+    <div class="footer-bottom"
+      style="text-align: center; border-top: 1px solid rgba(255,45,120,0.15); margin-top: 60px; padding-top: 30px; font-size: 0.85rem; color: #a4a4b2;">
       <p style="margin-bottom: 6px;">© 2026 Attitude of Gratitude Podcast. All rights reserved.</p>
       <p style="color: var(--pink-bright);">Built for ambitious minds who choose growth.</p>
     </div>
@@ -828,7 +921,7 @@
           let offset = i - active;
           if (offset > Math.floor(TOTAL / 2)) offset -= TOTAL;
           else if (offset < -Math.floor(TOTAL / 2)) offset += TOTAL;
-          
+
           const abs = Math.abs(offset);
 
           if (abs > MAX_SIDE) {
@@ -913,7 +1006,7 @@
 
     })();
   </script>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -936,6 +1029,41 @@
         }
       });
     });
+  </script>
+
+  <!-- Smooth scroll: no hash appears in URL bar -->
+  <script>
+    (function() {
+      function tryScroll(id) {
+        var el = document.getElementById(id);
+        if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return true; }
+        return false;
+      }
+      // On click: if same page → scroll silently; if different page → store target
+      document.addEventListener('click', function(e) {
+        var a = e.target.closest('a[data-scroll]');
+        if (!a) return;
+        var target = a.getAttribute('data-scroll');
+        var dest   = a.getAttribute('href') || '/';
+        // normalise both to strip trailing slash for comparison
+        var here   = window.location.pathname.replace(/\/+$/, '') || '/';
+        var there  = dest.replace(/\/+$/, '') || '/';
+        if (here === there || there === '') {
+          e.preventDefault();
+          if (!tryScroll(target)) {
+            // element not found yet – wait a tick
+            setTimeout(function(){ tryScroll(target); }, 100);
+          }
+        } else {
+          sessionStorage.setItem('scrollTo', target);
+        }
+      });
+      // On every page load: check if we arrived here with a pending scroll target
+      window.addEventListener('DOMContentLoaded', function() {
+        var t = sessionStorage.getItem('scrollTo');
+        if (t) { sessionStorage.removeItem('scrollTo'); setTimeout(function(){ tryScroll(t); }, 250); }
+      });
+    })();
   </script>
 </body>
 

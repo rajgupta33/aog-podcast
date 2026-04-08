@@ -3,16 +3,16 @@ const fs = require('fs');
 const content = fs.readFileSync('episodes content.txt', 'utf8');
 
 const mapping = [
-    { epNum: 5, eps: "episode-5.html", match: "NALINI ZINU", thumb: "thumbnails/5.webp" },
-    { epNum: 6, eps: "episode-6.html", match: "MEHER RUPA", thumb: "thumbnails/6.webp" },
-    { epNum: 7, eps: "episode-7.html", match: "SHAMIN PATEILE", thumb: "thumbnails/7.webp" },
-    { epNum: 8, eps: "episode-8.html", match: "NADINE AUDI", thumb: "thumbnails/8.webp" },
-    { epNum: 9, eps: "episode-9.html", match: "CHARLOTTE D", thumb: "thumbnails/9.webp" },
-    { epNum: 10, eps: "episode-10.html", match: "KANIKKA BATRA", thumb: "thumbnails/10.webp" },
-    { epNum: 11, eps: "episode-11.html", match: "LOUISE DAWSON", thumb: "thumbnails/11.webp" },
-    { epNum: 12, eps: "episode-12.html", match: "KARTHIK VIJAY", thumb: "thumbnails/12.webp" },
-    { epNum: 13, eps: "episode-13.html", match: "MANOJ HINGORANI", thumb: "thumbnails/13.webp" },
-    { epNum: 14, eps: "episode-14.html", match: "DISHA ODHRANI", thumb: "thumbnails/4.webp" }
+    { epNum: 5, eps: "/episodes/childs-future-shaped-before-age-6/", match: "NALINI ZINU", thumb: "thumbnails/5.webp" },
+    { epNum: 6, eps: "/episodes/we-hurt-people-we-care-about/", match: "MEHER RUPA", thumb: "thumbnails/6.webp" },
+    { epNum: 7, eps: "/episodes/pet-trying-to-tell-you-something/", match: "SHAMIN PATEILE", thumb: "thumbnails/7.webp" },
+    { epNum: 8, eps: "/episodes/uncomfortable-talking-about-periods/", match: "NADINE AUDI", thumb: "thumbnails/8.webp" },
+    { epNum: 9, eps: "/episodes/child-not-listening-watching-you/", match: "CHARLOTTE D", thumb: "thumbnails/9.webp" },
+    { epNum: 10, eps: "/episodes/angel-numbers-telling-you-something/", match: "KANIKKA BATRA", thumb: "thumbnails/10.webp" },
+    { epNum: 11, eps: "/episodes/child-isnt-struggling-system-is/", match: "LOUISE DAWSON", thumb: "thumbnails/11.webp" },
+    { epNum: 12, eps: "/episodes/sleeping-on-floor-to-building-stage-dubai/", match: "KARTHIK VIJAY", thumb: "thumbnails/12.webp" },
+    { epNum: 13, eps: "/episodes/one-moment-can-change-your-life/", match: "MANOJ HINGORANI", thumb: "thumbnails/13.webp" },
+    { epNum: 14, eps: "/episodes/problems-are-energy-imbalances/", match: "DISHA ODHRANI", thumb: "thumbnails/4.webp" }
 ];
 
 const chunks = content.split(/🟣 [A-Z’'\s-]+(?:–|-) FINAL STRUCTURED VERSION/);
@@ -94,17 +94,17 @@ if (!indexHtml.includes('EPISODE 14')) {
             </div>`;
     
     // insert before closing wrapper
-    indexHtml = indexHtml.replace(/(<div class="swiper-slide">\s*<a href="episode-13.html"[^>]*>[\s\S]*?<\/a>\s*<\/div>)/i, `$1${ep14Html}`);
+    indexHtml = indexHtml.replace(/(<div class="swiper-slide">\s*<a href="/episodes/one-moment-can-change-your-life/"[^>]*>[\s\S]*?<\/a>\s*<\/div>)/i, `$1${ep14Html}`);
 }
 
 fs.writeFileSync('index.html', indexHtml, 'utf8');
 
 // 2. Fix episode-X.html More Episodes section
 let fullEpisodes = [
-    {eps: "episode-1.html", thumb: "thumbnails/1.webp", title: "She took her 3 kids, 0 clients, and built a global marketing agency"},
-    {eps: "episode-2.html", thumb: "thumbnails/14.webp", title: "Why are you not healing… even after trying everything?"},
-    {eps: "episode-3.html", thumb: "thumbnails/2.webp", title: "What if happiness isn’t something you chase… but something you unlock?"},
-    {eps: "episode-4.html", thumb: "thumbnails/3.webp", title: "Why 2026 will be the biggest opportunity for e-commerce in Dubai"}
+    {eps: "/episodes/passion-over-comfort/", thumb: "thumbnails/1.webp", title: "She took her 3 kids, 0 clients, and built a global marketing agency"},
+    {eps: "/episodes/not-healing-after-trying-everything/", thumb: "thumbnails/14.webp", title: "Why are you not healing… even after trying everything?"},
+    {eps: "/episodes/happiness-is-something-you-unlock/", thumb: "thumbnails/2.webp", title: "What if happiness isn’t something you chase… but something you unlock?"},
+    {eps: "/episodes/biggest-opportunity-ecommerce-dubai-2026/", thumb: "thumbnails/3.webp", title: "Why 2026 will be the biggest opportunity for e-commerce in Dubai"}
 ].concat(episodesData);
 
 for (let i = 1; i <= 14; i++) {

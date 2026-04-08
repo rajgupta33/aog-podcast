@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-let template = fs.readFileSync("episode-1.html", "utf8");
+let template = fs.readFileSync("/episodes/passion-over-comfort/", "utf8");
 
 // Helpers to inject content seamlessly
 function buildPage(template, data) {
@@ -101,10 +101,10 @@ const ep2 = {
     guest_title: "Transformation Facilitator | Energy Healer",
     guest_content: "Dr. Tanu Kaushal is a transformation facilitator and energy healer, guiding individuals through emotional healing, mindset shifts, and spiritual awareness.\n\nThrough her work, she helps people understand the deeper layers of healing — focusing on energy alignment, self-awareness, and conscious living.\n\nHer approach emphasizes that true transformation begins within, not outside.",
     guest_quote: "👉 Healing begins the moment you take responsibility for yourself.",
-    share_url: "https://attitudeofgratitudepodcast.com/episode-2.html"
+    share_url: "https://attitudeofgratitudepodcast.com/episodes/not-healing-after-trying-everything/"
 };
 
-fs.writeFileSync("episode-2.html", buildPage(template, ep2), "utf8");
+fs.writeFileSync("/episodes/not-healing-after-trying-everything/", buildPage(template, ep2), "utf8");
 
 const ep3 = {
     title: "What if happiness isn’t something you chase… <span class=\"highlight\">but something you unlock?</span>",
@@ -141,10 +141,10 @@ const ep3 = {
     guest_title: "Author of Radiate Happiness | Mindset Guide",
     guest_content: "Anjana is the author of Radiate Happiness, a book focused on inner transformation, emotional clarity, and mindful living.\n\nHer journey is proof that happiness is not something external — it’s something cultivated from within through awareness, gratitude, and intentional thinking.\n\nThrough her work, she helps individuals reconnect with themselves and build a life rooted in peace and purpose.",
     guest_quote: "👉 Happiness isn’t found… it’s created.",
-    share_url: "https://attitudeofgratitudepodcast.com/episode-3.html"
+    share_url: "https://attitudeofgratitudepodcast.com/episodes/happiness-is-something-you-unlock/"
 };
 
-fs.writeFileSync("episode-3.html", buildPage(template, ep3), "utf8");
+fs.writeFileSync("/episodes/happiness-is-something-you-unlock/", buildPage(template, ep3), "utf8");
 
 const ep4 = {
     title: "Why 2026 will be the biggest opportunity for <span class=\"highlight\">e-commerce in Dubai</span>",
@@ -186,8 +186,8 @@ const ep4 = {
     guest_title: "Founder, Emarkiz.com | E-commerce Consultant",
     guest_content: "Raina Lalchand is the founder of Emarkiz.com and Emarkiz Web Solutions, helping businesses launch, optimize, and scale their e-commerce presence in the UAE and globally.\n\nWith deep expertise in Amazon marketplaces, product positioning, and digital growth strategies, she has helped numerous brands navigate the complexities of online selling.\n\nHer work focuses on simplifying e-commerce for beginners while building scalable systems for long-term success.",
     guest_quote: "👉 E-commerce isn’t saturated — it’s just misunderstood.",
-    share_url: "https://attitudeofgratitudepodcast.com/episode-4.html"
+    share_url: "https://attitudeofgratitudepodcast.com/episodes/biggest-opportunity-ecommerce-dubai-2026/"
 };
 
-fs.writeFileSync("episode-4.html", buildPage(template, ep4), "utf8");
+fs.writeFileSync("/episodes/biggest-opportunity-ecommerce-dubai-2026/", buildPage(template, ep4), "utf8");
 console.log("Episodes generated!");
