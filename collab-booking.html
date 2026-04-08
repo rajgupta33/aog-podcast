@@ -50,15 +50,15 @@
 
 <body>
 
-  <div id="loader" class="loader">
-    <div class="spinner"></div>
-  </div>
-
   <!-- ── HEADER ─────────────────────────────────────── -->
   <header class="site-header">
-    <nav class="navbar container">
-      <a class="brand" href="index.html#top" aria-label="The Attitude of Gratitude home">
+    <nav class="navbar" style="padding: 12px 4%; width: 100%;">
+      <a class="brand" href="index.html#" aria-label="The Attitude of Gratitude home">
         <img class="brand-logo" src="logo.png" alt="The Attitude of Gratitude Podcast" />
+        <div class="brand-text">
+          <span class="brand-text-top">THE ATTITUDE OF</span>
+          <span class="brand-text-mid">GRATITUDE</span>
+        </div>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
@@ -347,8 +347,12 @@
       
       <!-- BRAND SECTION -->
       <div>
-        <a class="brand footer-brand" href="index.html#top">
+        <a class="brand footer-brand" href="index.html#">
           <img class="brand-logo" src="logo.png" alt="The Attitude of Gratitude Podcast" />
+          <div class="brand-text">
+            <span class="brand-text-top">THE ATTITUDE OF</span>
+            <span class="brand-text-mid">GRATITUDE</span>
+          </div>
         </a>
         <p>Dubai-based podcast for founders, creators, and ambitious minds sharing real stories, insights, and lessons that build true authority.</p>
         <p style="color: var(--pink-bright); font-style: italic; font-weight: 600; margin-top: 12px;">👉 Watch. Learn. Grow.</p>
@@ -454,12 +458,6 @@
         });
       });
     }
-
-    // Loader Exit
-    window.addEventListener('load', () => {
-      const loader = document.getElementById('loader');
-      if (loader) loader.classList.add('loaded');
-    });
 
     // Navbar Scroll Background
     window.addEventListener('scroll', () => {

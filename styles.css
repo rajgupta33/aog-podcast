@@ -34,37 +34,6 @@
   --font-body: 'Inter', sans-serif;
 }
 
-/* ─── LOADER ────────────────────────────────────────── */
-.loader {
-  position: fixed;
-  inset: 0;
-  background: var(--bg-deep);
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
-}
-
-.loader.loaded {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.spinner {
-  width: 50px;
-  height: 50px;
-  border: 3px solid rgba(255, 45, 120, 0.2);
-  border-top-color: var(--pink);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* ─── ANIMATIONS ────────────────────────────────────── */
 .fade-up {
@@ -412,14 +381,49 @@ h4 {
 
 .brand {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
   flex-shrink: 0;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.brand-text-top {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.brand-text-mid {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  color: var(--pink-bright);
+  line-height: 1;
+  font-weight: 700;
+  background: linear-gradient(135deg, #FF6BA8, #E8B4C0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(255, 45, 120, 0.4));
+  margin-top: 4px;
 }
 
 .brand-logo {
   width: auto;
-  max-width: clamp(200px, 30vw, 360px);
-  max-height: 75px;
+  max-width: clamp(120px, 20vw, 160px);
+  max-height: 120px;
   height: auto;
   filter: drop-shadow(0 0 18px rgba(255, 45, 120, 0.4));
 }
@@ -2326,5 +2330,19 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 1rem !important;
+  }
+}
+
+/* ── MOBILE BRAND SIZING overrides ── */
+@media (max-width: 760px) {
+  .brand-logo {
+    max-width: 80px !important;
+    max-height: 80px !important;
+  }
+  .brand-text-top {
+    font-size: 0.75rem !important;
+  }
+  .brand-text-mid {
+    font-size: 1.4rem !important;
   }
 }
