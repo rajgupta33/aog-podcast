@@ -1730,53 +1730,41 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
   }
 
   /* ═══ EPISODE PAGE (episode-1.html) ═══ */
-  .ep-hero { padding-top: 24px !important; padding-bottom: 24px !important; }
-  .ep-title { font-size: clamp(1.75rem, 7.5vw, 2.8rem) !important; line-height: 1.15; margin-bottom: 14px !important; }
-  .ep-subtitle { font-size: 0.97rem !important; padding: 0 4px; line-height: 1.6; }
-  .ep-meta { gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
-  .ep-meta span { font-size: 0.78rem; padding: 5px 10px; }
-
-  /* Video wrapper — full width, proper aspect ratio */
-  .video-wrapper { border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,0.6); }
+  .ep-hero { padding-top: 40px !important; }
+  .ep-title { font-size: clamp(1.9rem, 8vw, 3rem) !important; line-height: 1.1; }
+  .ep-subtitle { font-size: 1rem !important; padding: 0 8px; }
+  .ep-meta { gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .ep-meta span { font-size: 0.82rem; padding: 6px 12px; }
 
   /* details-grid: episode about + learnings — stack to 1 col */
-  .details-grid { grid-template-columns: 1fr !important; gap: 20px; }
-  .ep-about h2 { font-size: clamp(1.3rem, 5.5vw, 1.75rem) !important; line-height: 1.2; }
-  .ep-about p { font-size: 0.97rem; }
+  .details-grid { grid-template-columns: 1fr !important; gap: 24px; }
+  .ep-about h2 { font-size: clamp(1.3rem, 6vw, 1.8rem) !important; }
   .ep-learnings { padding: 20px 18px; }
-  .ep-learnings h3 { font-size: 1.1rem; }
-  .ep-learnings .check-list li { font-size: 0.95rem; }
+  .ep-learnings h3 { font-size: 1.15rem; }
 
   /* Timestamps — wrap time + content vertically, hiding the text node dash */
-  .timestamp-list li { flex-direction: column; gap: 4px; margin-bottom: 18px; align-items: flex-start; font-size: 0; color: transparent; }
-  .timestamp-list .time { min-width: unset; margin-top: 0; font-size: 0.88rem; color: var(--pink-bright); }
-  .ts-content { padding-left: 0; font-size: 0.9rem; color: var(--text); line-height: 1.5; }
-  .ts-content strong { font-size: 0.9rem; }
+  .timestamp-list li { flex-direction: column; gap: 4px; margin-bottom: 20px; align-items: flex-start; font-size: 0; color: transparent; }
+  .timestamp-list .time { min-width: unset; margin-top: 0; font-size: 0.9rem; color: var(--pink-bright); }
+  .ts-content { padding-left: 0; font-size: 0.92rem; color: var(--text); }
 
   /* Platform pills row */
   .mini-platform-row { gap: 8px; flex-wrap: wrap; justify-content: center; }
-  .platform-pill { padding: 8px 14px; font-size: 0.82rem; gap: 7px; }
-  .platform-pill img { height: 20px !important; }
+  .platform-pill { padding: 9px 14px; font-size: 0.85rem; gap: 8px; }
 
-  /* Share box */
-  .share-actions { flex-direction: column !important; gap: 10px; align-items: stretch !important; }
+  /* Share actions — stack buttons */
+  .share-actions { flex-direction: column !important; gap: 12px; align-items: stretch !important; }
   .share-actions a,
   .share-actions button { width: 100% !important; box-sizing: border-box; text-align: center; display: block; }
 
   /* Guest section — use 1 column */
-  .ep-guest .details-grid { gap: 24px; }
-  .ep-guest .about-image-wrap img { max-height: 260px; object-fit: cover; aspect-ratio: 4/3; width: 100%; }
-  .ep-guest .about-copy h2 { font-size: clamp(1.5rem, 6.5vw, 2rem) !important; text-align: center; }
-  .ep-guest .about-copy .eyebrow { justify-content: center; }
+  .ep-guest .about-image-wrap img { max-height: 280px; object-fit: cover; aspect-ratio: 4/3; }
+  .ep-guest .about-copy h2 { font-size: clamp(1.6rem, 7vw, 2.2rem) !important; }
 
   /* Subscribe section */
-  .ep-subscribe .lead-magnet-card { padding: 22px 14px; }
+  .ep-subscribe .lead-magnet-card { padding: 24px 16px; }
   .ep-subscribe .lead-form { flex-direction: column; }
   .ep-subscribe .lead-form input,
   .ep-subscribe .lead-form .button { width: 100%; }
-
-  /* More episodes - section tight spacing */
-  .ep-subscribe.section { padding: 32px 0; }
 
   /* More episodes list — 1 col */
   .episodes .episode-grid[style] { grid-template-columns: 1fr !important; max-width: 100% !important; }
