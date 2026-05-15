@@ -59,6 +59,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .check-list li { position: relative; padding-left: 32px; margin-bottom: 16px; font-size: 1.1rem; color: #E0E0E0; }
     .check-list li::before { content: '✓'; position: absolute; left: 0; color: var(--pink-bright); font-weight: bold; }
   </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2201166227375001');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2201166227375001&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -114,7 +131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
             <a href="/get-featured/" data-scroll="apply" class="button" style="font-size: 1.2rem; padding: 20px 40px;">👉 Apply for a Guest Slot</a>
             <p style="color: var(--pink-bright); font-weight: 600; font-size: 1.05rem; display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-top: 32px; background: rgba(255,45,120,0.05); padding: 12px 24px; border-radius: 12px; border: 1px solid rgba(255,45,120,0.15); flex-wrap: wrap;">
-              Trusted by 70,000+ listeners <span style="color: rgba(255,255,255,0.2);">|</span> 100+ episodes <span style="color: rgba(255,255,255,0.2);">|</span> Dubai-based
+              Trusted by 70,000+ listeners <span style="color: rgba(255,255,255,0.2);">|</span> Dubai-based
             </p>
           </div>
         </div>
@@ -210,53 +227,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
           <!-- OPTION 3 -->
           <article class="pricing-card glass-panel">
-            <h3 class="pkg-title" style="font-size: 1.8rem;">Online Session</h3>
-            <p class="pkg-desc">👉 Ideal for budget-conscious or remote founders wanting to step onto the stage.</p>
+            <h3 class="pkg-title" style="font-size: 1.8rem;">Starter Visibility</h3>
+            <p class="pkg-desc">👉 Best for: Budget / international guests</p>
             <div class="pkg-price">
               <span class="currency">AED</span>
               <span class="amount">444</span>
             </div>
+            <p style="font-size: 0.9rem; color: #a4a4b2; margin-top: -10px; margin-bottom: 15px;">(ONLINE SESSION)</p>
             <ul class="pkg-features">
-              <li><span class="check">✓</span> Remote Virtual Recording</li>
-              <li><span class="check">✓</span> Professional Audio Edit</li>
-              <li><span class="check">✓</span> Standard Release</li>
+              <li><span class="check">✓</span> Remote Podcast Recording</li>
+              <li><span class="check">✓</span> Guided Conversation</li>
+              <li><span class="check" style="color: #ff2d78;">❌</span> No Editing / Posting</li>
             </ul>
-            <a href="/get-featured/" data-scroll="apply" class="button button-outline pkg-btn" data-plan="Online Session - AED 444">Select Package</a>
+            <a href="/get-featured/" data-scroll="apply" class="button button-outline pkg-btn" data-plan="Starter Visibility - AED 444">Select Package</a>
           </article>
 
           <!-- OPTION 2 -->
           <article class="pricing-card glass-panel">
-            <h3 class="pkg-title" style="font-size: 1.8rem;">Content Boost</h3>
-            <p class="pkg-desc">👉 Best for organic growth, establishing baseline authority on all platforms.</p>
-            <div class="pkg-price">
-              <span class="currency">AED</span>
-              <span class="amount">999</span>
-            </div>
-            <ul class="pkg-features">
-              <li><span class="check">✓</span> In-Studio Recording</li>
-              <li><span class="check">✓</span> Premium Video & Audio Editing</li>
-              <li><span class="check">✓</span> Multi-Platform Posting</li>
-              <li><span class="check">✓</span> Organic Reach Strategy</li>
-            </ul>
-            <a href="/get-featured/" data-scroll="apply" class="button button-outline pkg-btn" data-plan="Content Boost - AED 999">Select Package</a>
-          </article>
-
-          <!-- OPTION 1 (Most Popular) -->
-          <article class="pricing-card glass-panel popular-pkg" style="transform: scale(1.05); box-shadow: 0 0 35px rgba(255,45,120,0.35); border-color: var(--pink-bright);">
-            <div class="popular-badge" style="background: linear-gradient(135deg, #1A0D16, var(--pink-bright));">Most Popular</div>
-            <h3 class="pkg-title" style="color: #FF2D78; font-size: 2rem;">Full Visibility</h3>
-            <p class="pkg-desc">👉 Best for maximum authority and massive reach across the ecosystem.</p>
+            <h3 class="pkg-title" style="font-size: 1.8rem;">Founder Authority</h3>
+            <p class="pkg-desc">👉 Best for: Organic growth & personal branding</p>
             <div class="pkg-price">
               <span class="currency">AED</span>
               <span class="amount">1,499</span>
             </div>
             <ul class="pkg-features">
-              <li><span class="check">✓</span> In-Studio Recording</li>
-              <li><span class="check">✓</span> Full Editing & Posting</li>
-              <li><span class="check">✓</span> Targeted Paid Ads Push</li>
-              <li><span class="check">✓</span> Growth & Amplification</li>
+              <li><span class="check">✓</span> Studio Podcast Recording</li>
+              <li><span class="check">✓</span> Professional Editing</li>
+              <li><span class="check">✓</span> Posting on Platforms</li>
+              <li><span class="check">✓</span> Paid Ads Promotion (Meta/IG) for at least one week or more</li>
+              <li><span class="check">✓</span> Multiple reels/shorts on viral hooks</li>
             </ul>
-            <a href="/get-featured/" data-scroll="apply" class="button pkg-btn" data-plan="Full Visibility - AED 1499" style="width: 100%; text-align: center;">Select Package</a>
+            <a href="/get-featured/" data-scroll="apply" class="button button-outline pkg-btn" data-plan="Founder Authority - AED 1499">Select Package</a>
+          </article>
+
+          <!-- OPTION 1 (Most Popular) -->
+          <article class="pricing-card glass-panel popular-pkg" style="transform: scale(1.05); box-shadow: 0 0 35px rgba(255,45,120,0.35); border-color: var(--pink-bright);">
+            <div class="popular-badge" style="background: linear-gradient(135deg, #1A0D16, var(--pink-bright));">Most Impactful</div>
+            <h3 class="pkg-title" style="color: #FF2D78; font-size: 2rem;">Market Leader Presence</h3>
+            <p class="pkg-desc">👉 Best for: Founders who want reach + authority</p>
+            <div class="pkg-price">
+              <span class="currency">AED</span>
+              <span class="amount">1,999</span>
+            </div>
+            <ul class="pkg-features">
+              <li><span class="check">✓</span> Studio Podcast Recording</li>
+              <li><span class="check">✓</span> Professional Editing</li>
+              <li><span class="check">✓</span> Posting on All Platforms</li>
+              <li><span class="check">✓</span> Paid Ads Promotion (Meta/IG and TikTok) for at least one month</li>
+              <li><span class="check">✓</span> Audience Growth Push</li>
+              <li><span class="check">✓</span> Multiple reels/shorts on viral hooks</li>
+            </ul>
+            <a href="/get-featured/" data-scroll="apply" class="button pkg-btn" data-plan="Market Leader Presence" style="width: 100%; text-align: center;">Select Package</a>
           </article>
 
         </div>
@@ -264,8 +285,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- ADD-ON -->
         <div style="text-align: center; margin-top: 40px;">
           <div style="display: inline-flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 8px; padding: 16px 24px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; max-width: 100%;">
-             <span style="color: #F8991D; font-weight: bold;">ADD-ON:</span> 
-             <span>Brand Placement in Video + Audio</span>
+             <span style="color: #F8991D; font-weight: bold;">BRAND / PRODUCT PLACEMENT:</span> 
+             <span>Feature your product/service inside episode (Subtle promotion to engaged audience)</span>
              <strong style="color: var(--pink-bright);">AED 250</strong>
           </div>
         </div>
@@ -294,59 +315,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p style="color: #E0E0E0; font-size: 1.1rem;">Submit your application below to secure your spot.</p>
           </div>
 
-          <!-- SUCCESS MESSAGE (Hidden by default) -->
-          <div id="success-message" class="success-message" style="display: none; text-align: center; padding: 40px 0;">
-            <div class="success-icon" style="font-size: 4rem; color: #F8991D; margin-bottom: 20px;">✓</div>
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 16px;">Application Received</h2>
-            <p style="color: #a4a4b2; font-size: 1.1rem; max-width: 500px; margin: 0 auto;">
-              Thank you for stepping up. Our team is reviewing your profile and will be in touch within 48 hours to secure your slot.
-            </p>
-            <button class="button" style="margin-top: 30px;" onclick="window.location.reload()">Submit Another Application</button>
-          </div>
-
           <!-- ACTUAL FORM -->
           <form id="collab-form" class="premium-form" novalidate onsubmit="handleFormSubmit(event)">
             
             <div class="input-row">
               <div class="input-group floating-label-group">
                 <input type="text" id="firstName" required />
-                <label for="firstName">First Name</label>
+                <label for="firstName">First Name *</label>
               </div>
               <div class="input-group floating-label-group">
-                <input type="text" id="lastName" required />
+                <input type="text" id="lastName" />
                 <label for="lastName">Last Name</label>
               </div>
             </div>
 
             <div class="input-row">
               <div class="input-group floating-label-group">
-                <input type="email" id="email" required />
+                <input type="email" id="email" />
                 <label for="email">Work Email</label>
               </div>
               <div class="input-group floating-label-group">
                 <input type="tel" id="mobile" required />
-                <label for="mobile">Mobile Number</label>
+                <label for="mobile">Mobile Number *</label>
               </div>
             </div>
 
             <div class="input-group floating-label-group">
-              <input type="url" id="linkedin" required />
-              <label for="linkedin">LinkedIn Profile URL</label>
+              <input type="url" id="linkedin" />
+              <label for="linkedin">LinkedIn/Instagram Profile URL</label>
             </div>
 
             <div class="input-group floating-label-group">
               <select id="selectedPackage" required style="cursor: pointer; background-color: #12121e; color: #ffffff; appearance: auto; -webkit-appearance: auto;">
                 <option value="" disabled selected style="background-color: #12121e; color: #a4a4b2;"></option>
-                <option value="Online Session - AED 444" style="background-color: #12121e; color: #ffffff;">Online Session (AED 444)</option>
-                <option value="Content Boost - AED 999" style="background-color: #12121e; color: #ffffff;">Content Boost (AED 999)</option>
-                <option value="Full Visibility - AED 1499" style="background-color: #12121e; color: #ffffff;">Full Visibility (AED 1,499)</option>
-                <option value="Include Add-On: Brand Placement" style="background-color: #12121e; color: #ffffff;">Include Add-On: Brand Placement (+AED 250)</option>
+                <option value="Starter Visibility - AED 444" style="background-color: #12121e; color: #ffffff;">Starter Visibility (AED 444)</option>
+                <option value="Founder Authority - AED 1499" style="background-color: #12121e; color: #ffffff;">Founder Authority (AED 1,499)</option>
+                <option value="Market Leader Presence - AED 1999" style="background-color: #12121e; color: #ffffff;">Market Leader Presence (AED 1,999)</option>
+                <option value="Brand/Product Placement" style="background-color: #12121e; color: #ffffff;">Brand/Product Placement (+AED 250)</option>
+                <option value="Not sure yet - help me to decide" style="background-color: #12121e; color: #ffffff;">Not sure yet - help me to decide</option>
               </select>
-              <label for="selectedPackage" style="transform: translateY(-26px) scale(0.8); background: #12121e; padding: 0 4px; color: var(--pink-bright);">Selected Target Package</label>
+              <label for="selectedPackage" style="transform: translateY(-26px) scale(0.8); background: #12121e; padding: 0 4px; color: var(--pink-bright);">Selected Target Package *</label>
             </div>
 
             <div class="input-group floating-label-group">
-              <textarea id="pitch" rows="3" required></textarea>
+              <textarea id="pitch" rows="3"></textarea>
               <label for="pitch">Why are you a fit? What is your story?</label>
             </div>
 
@@ -355,6 +367,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </button>
           </form>
 
+          <!-- NEW SECTION -->
+          <div style="margin-top: 80px; text-align: left; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 40px; border-radius: 24px;">
+            <h3 class="super-heading" style="font-size: 2.2rem; margin-bottom: 20px;">WHY FOUNDERS ARE USING PODCASTS AS PR</h3>
+            <p style="color: #E0E0E0; font-size: 1.15rem; margin-bottom: 24px; line-height: 1.6;">
+              Modern brands grow through visibility, trust, and storytelling — not just ads.
+            </p>
+            <p style="color: var(--pink-bright); font-weight: 600; font-size: 1.1rem; margin-bottom: 16px;">Podcast features help founders:</p>
+            <ul class="check-list" style="margin-bottom: 32px;">
+              <li>Build authority & credibility</li>
+              <li>Increase audience trust</li>
+              <li>Strengthen personal branding</li>
+              <li>Reach new audiences organically</li>
+              <li>Attract partnerships & opportunities</li>
+            </ul>
+
+            <h4 style="font-family: var(--font-display); font-size: 1.6rem; color: white; margin-bottom: 20px; text-transform: uppercase;">What one podcast feature can create</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 12px; font-size: 1.1rem; color: #E0E0E0; display: flex; align-items: flex-start; gap: 12px;"><span style="color: #00C853; font-weight: bold;">✅</span> 30+ content assets from one interview</li>
+              <li style="margin-bottom: 12px; font-size: 1.1rem; color: #E0E0E0; display: flex; align-items: flex-start; gap: 12px;"><span style="color: #00C853; font-weight: bold;">✅</span> High-performing reels & short clips</li>
+              <li style="margin-bottom: 12px; font-size: 1.1rem; color: #E0E0E0; display: flex; align-items: flex-start; gap: 12px;"><span style="color: #00C853; font-weight: bold;">✅</span> Long-form trust-building content</li>
+              <li style="margin-bottom: 12px; font-size: 1.1rem; color: #E0E0E0; display: flex; align-items: flex-start; gap: 12px;"><span style="color: #00C853; font-weight: bold;">✅</span> Multi-platform visibility across Instagram, YouTube & LinkedIn</li>
+              <li style="margin-bottom: 0; font-size: 1.1rem; color: #E0E0E0; display: flex; align-items: flex-start; gap: 12px;"><span style="color: #00C853; font-weight: bold;">✅</span> Stronger founder positioning online</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -398,8 +434,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <h3 style="margin-bottom: 20px;">CONTACT</h3>
         <ul>
-          <li><strong>📧 Email</strong><br /><a href="mailto:sadhna.attitudesmm@gmail.com"
-              style="margin-top: 4px; display: inline-block;">sadhna.attitudesmm@gmail.com</a></li>
+          <li><strong>📧 Email</strong><br /><a href="mailto:podcast@attitude-ofgratitude.com"
+              style="margin-top: 4px; display: inline-block;">podcast@attitude-ofgratitude.com</a></li>
           <li style="margin-top: 20px;"><strong>📱 Call / WhatsApp</strong><br /><a
               href="https://api.whatsapp.com/send?phone=971551252302" target="_blank"
               style="margin-top: 4px; display: inline-block;">+971 55 125 2302</a></li>
@@ -452,7 +488,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       e.preventDefault();
       const form = document.getElementById('collab-form');
       const header = document.getElementById('form-header');
-      const successMsg = document.getElementById('success-message');
       const submitBtn = form.querySelector('button[type="submit"]');
 
       if (!form.checkValidity()) {
@@ -483,10 +518,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         body: JSON.stringify(payload)
       })
       .then(() => {
-        form.style.display = 'none';
-        header.style.display = 'none';
-        successMsg.style.display = 'block';
-        document.getElementById('apply').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        window.location.href = '/thank-you/';
       })
       .catch(() => {
         submitBtn.textContent = '👉 Apply for a Guest Slot';
