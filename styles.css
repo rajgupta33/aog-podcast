@@ -819,6 +819,31 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
   padding: 0; margin: 0;
 }
 
+.ep-timestamps.timestamps-collapsible .timestamp-list {
+  max-height: 260px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+  transition: max-height 0.25s ease;
+}
+
+.ep-timestamps.timestamps-expanded .timestamp-list {
+  max-height: none;
+  overflow: visible;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.timestamp-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.timestamp-toggle {
+  cursor: pointer;
+}
+
 .timestamp-list li {
   margin-bottom: 12px;
   color: #D0D0D0;
@@ -1748,6 +1773,7 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
   .ep-learnings .check-list li { font-size: 0.95rem; }
 
   /* Timestamps — wrap time + content vertically, hiding the text node dash */
+  .ep-timestamps.timestamps-collapsible .timestamp-list { max-height: 220px; }
   .timestamp-list li { flex-direction: column; gap: 4px; margin-bottom: 18px; align-items: flex-start; font-size: 0; color: transparent; }
   .timestamp-list .time { min-width: unset; margin-top: 0; font-size: 0.88rem; color: var(--pink-bright); }
   .ts-content { padding-left: 0; font-size: 0.9rem; color: var(--text); line-height: 1.5; }
