@@ -10,53 +10,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page Moved | The Attitude of Gratitude Podcast</title>
-  <meta name="robots" content="noindex" />
+  <title>Page Not Found | The Attitude of Gratitude Podcast</title>
+  <meta name="description" content="The page you requested could not be found. Browse all episodes of The Attitude of Gratitude Podcast or apply to be featured as a guest in Dubai." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#080810" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/styles.css?v=4" />
   <script>
-    // SEO redirect: old episode URLs → new slug URLs
-    const redirects = {
-  "/episode-1.html": "/episodes/passion-over-comfort/",
-  "/episode-2.html": "/episodes/not-healing-after-trying-everything/",
-  "/episode-3.html": "/episodes/happiness-is-something-you-unlock/",
-  "/episode-4.html": "/episodes/biggest-opportunity-ecommerce-dubai-2026/",
-  "/episode-5.html": "/episodes/childs-future-shaped-before-age-6/",
-  "/episode-6.html": "/episodes/we-hurt-people-we-care-about/",
-  "/episode-7.html": "/episodes/pet-trying-to-tell-you-something/",
-  "/episode-8.html": "/episodes/uncomfortable-talking-about-periods/",
-  "/episode-9.html": "/episodes/child-not-listening-watching-you/",
-  "/episode-10.html": "/episodes/angel-numbers-telling-you-something/",
-  "/episode-11.html": "/episodes/child-isnt-struggling-system-is/",
-  "/episode-12.html": "/episodes/sleeping-on-floor-to-building-stage-dubai/",
-  "/episode-13.html": "/episodes/one-moment-can-change-your-life/",
-  "/episode-14.html": "/episodes/problems-are-energy-imbalances/"
-    };
-    const path = window.location.pathname.replace(/\/+$/, '') || '/';
-    const target = redirects[path] || redirects[path + '.html'];
-    if (target) {
-      window.location.replace(target);
-    }
+    // Legacy URL map: redirect only known historical paths, never unknown 404 URLs
+    (function () {
+      var redirects = {
+        "/episode-1.html": "/episodes/passion-over-comfort/",
+        "/episode-2.html": "/episodes/not-healing-after-trying-everything/",
+        "/episode-3.html": "/episodes/happiness-is-something-you-unlock/",
+        "/episode-4.html": "/episodes/biggest-opportunity-ecommerce-dubai-2026/",
+        "/episode-5.html": "/episodes/childs-future-shaped-before-age-6/",
+        "/episode-6.html": "/episodes/we-hurt-people-we-care-about/",
+        "/episode-7.html": "/episodes/pet-trying-to-tell-you-something/",
+        "/episode-8.html": "/episodes/uncomfortable-talking-about-periods/",
+        "/episode-9.html": "/episodes/child-not-listening-watching-you/",
+        "/episode-10.html": "/episodes/angel-numbers-telling-you-something/",
+        "/episode-11.html": "/episodes/child-isnt-struggling-system-is/",
+        "/episode-12.html": "/episodes/sleeping-on-floor-to-building-stage-dubai/",
+        "/episode-13.html": "/episodes/one-moment-can-change-your-life/",
+        "/episode-14.html": "/episodes/problems-are-energy-imbalances/",
+        "/collab-booking": "/get-featured/",
+        "/collab-booking.html": "/get-featured/"
+      };
+      var path = window.location.pathname.replace(/\/+$/, "") || "/";
+      var target = redirects[path] || redirects[path + ".html"];
+      if (target) {
+        window.location.replace(target);
+      }
+    })();
   </script>
-  <meta http-equiv="refresh" content="2;url=/" />
-  <style>
-    body { background: #080810; color: #fff; font-family: sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; }
-    a { color: #ff2d78; }
-  </style>
 </head>
-<body>
+<body style="background: #080810; color: #fff; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 24px;">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFNKC2F8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  <div>
-    <p style="font-size: 4rem;">🔄</p>
-    <h1>Page Moved</h1>
-    <p>Redirecting you to the new location…</p>
-    <p><a href="/">Back to Home</a></p>
-  </div>
+  <main style="max-width: 600px; background: rgba(20, 20, 32, 0.75); border: 1px solid rgba(255, 45, 120, 0.25); border-radius: 20px; padding: 48px 32px;">
+    <p class="eyebrow" style="margin-bottom: 12px;"><span>404 · Page Not Found</span></p>
+    <h1 style="font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 16px;">We Couldn't Find That Page</h1>
+    <p style="color: #a4a4b2; margin-bottom: 28px; line-height: 1.6;">
+      The link you followed may have moved or no longer exists. Explore our latest Dubai founder and expert conversations or view our podcast guest packages below.
+    </p>
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+      <a href="/" class="button">Back to Homepage</a>
+      <a href="/episodes/" class="button button-outline">Browse All 26 Episodes</a>
+      <a href="/get-featured/" class="button button-outline">View Guest Packages</a>
+    </div>
+  </main>
+  <script src="/site-components.js" defer></script>
 </body>
 </html>

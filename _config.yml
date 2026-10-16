@@ -1,0 +1,11 @@
+# Keep internal audit material, build tools and archived pages out of GitHub Pages.
+exclude:
+  - seo
+  - scripts
+  - aog site seo
+  - generate_episodes.js
+  - build_latest.js
+  - fix_links.js
+  - old index file.html
+  - old css file.css
+  - COLLAB DETAILS.pdf

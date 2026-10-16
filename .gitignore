@@ -1,0 +1,9 @@
+# Local audit snapshots and temporary source downloads are not website assets.
+aog site seo/
+__pycache__/
+*.pyc
+seo/youtube-channel-snapshot.*
+seo/youtube-videos.json
+seo/latest-video-source.json
+seo/podcast-feed.xml
+seo/reports/

@@ -1,0 +1,23 @@
+name: Validate website
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: '30 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python scripts/seo-validate.py
+      - run: node scripts/check-browser-scripts.js
+      - run: node scripts/check-booking-form.js
+      - if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: python scripts/verify-live.py

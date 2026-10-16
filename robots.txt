@@ -1,0 +1,26 @@
+# robots.txt for https://attitude-ofgratitude.com/
+User-agent: Googlebot
+Allow: /
+Disallow: /aog%20site%20seo/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /aog%20site%20seo/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /aog%20site%20seo/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /aog%20site%20seo/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /aog%20site%20seo/
+
+User-agent: *
+Allow: /
+Disallow: /aog%20site%20seo/
+
+Sitemap: https://attitude-ofgratitude.com/sitemap.xml
