@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css?v=20261016-layout2" />
+  <link rel="stylesheet" href="styles.css?v=20261016-home3" />
 
   <script type="application/ld+json">
   {
@@ -130,7 +130,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 
-<body>
+<body class="home-page">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFNKC2F8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -165,9 +165,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <main id="top">
 
     <!-- ── HERO ───────────────────────────────────────── -->
-    <section class="hero section">
+    <section class="hero section" aria-label="Meet the podcast and our guests">
       <div class="hero-video-wrap" aria-hidden="true">
-        <img class="hero-bg-img" src="background image.webp" alt="" width="1600" height="1600" fetchpriority="high"
+        <img class="hero-bg-img" src="background image.webp" alt="" width="1600" height="1600" decoding="async"
           style="width:100%;height:100%;object-fit:cover;filter:brightness(0.5) saturate(1.1);" />
         <div class="hero-overlay"></div>
       </div>
@@ -176,95 +176,90 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- LEFT CONTENT -->
         <div class="hero-copy">
-          <div class="eyebrow fade-up delay-1">
-            <span>Dubai Interview Podcast • Hosted by Sadhna Sharma</span>
-          </div>
-
-          <h1 class="fade-up delay-2">
-            A Dubai podcast for<br />
-            <span style="color:var(--pink); text-shadow: 0 0 20px rgba(200,65,90,0.8);">founder stories</span>,<br />
-            business &amp; growth.
-          </h1>
-
-          <p class="hero-subtext fade-up delay-3">
-            Attitude of Gratitude is a Dubai-based interview podcast hosted by <strong>Sadhna Sharma</strong>. We share conversations with founders, experts, and creators about building businesses and navigating personal growth. Founders and brands can enquire about paid guest appearances and promotion packages.
-          </p>
-
-          <div class="hero-actions fade-up delay-3">
-            <a class="button" href="/get-featured/">VIEW GUEST PACKAGES</a>
-            <a class="button button-outline" href="/episodes/">WATCH FOUNDER INTERVIEWS</a>
+          <p class="eyebrow hero-eyebrow"><span>Dubai podcast &middot; Sadhna Sharma</span></p>
+          <h1>Real stories.<br /><span>Fresh perspectives.</span></h1>
+          <p class="hero-subtext">Honest conversations on business, wellbeing, and the moments that change us.</p>
+          <div class="hero-actions">
+            <a class="button" href="/episodes/pcos-weight-loss-insulin-resistance-dr-lamya-kamal/">Watch latest episode</a>
+            <a class="button button-outline" href="/get-featured/">Be our guest</a>
           </div>
         </div>
 
-        <!-- RIGHT SLIDER -->
-        <div class="hero-gallery-wrap fade-up delay-2">
 
-          <div class="coverflow" id="cf">
+
+        <!-- RIGHT SLIDER -->
+        <div class="hero-gallery-wrap" aria-label="Podcast guest photo carousel">
+
+          <div class="coverflow" id="cf" tabindex="0" aria-label="Guest photos. Use left and right arrow keys to browse.">
             <div class="cf-glow"></div>
 
             <div class="cf-stage" id="cfStage">
-
-              <div class="cf-card" data-idx="0">
-                <img src="guest images/raina.webp" alt="Raina Lalchand — Founder of Emarkiz on Attitude of Gratitude Podcast" width="900" height="506" />
+              <div class="cf-card is-active" data-idx="0">
+                <img src="/guest%20images/dr-lamya-with-sadhna.webp" alt="Dr. Lamya Kamal with host Sadhna Sharma in the podcast studio" width="1198" height="800" loading="eager" fetchpriority="high" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="1">
-                <img src="guest images/ruchi poddar.webp" alt="Ruchi Poddar — Founder of MelonMe on Attitude of Gratitude Podcast" width="900" height="601" />
+                <img src="guest images/raina.webp" alt="Raina Lalchand — Founder of Emarkiz on Attitude of Gratitude Podcast" width="900" height="506" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="2">
-                <img src="guest images/disha odhrani.webp" alt="Disha Odhrani — Transformation Coach on Attitude of Gratitude Podcast" width="900" height="506" loading="lazy" decoding="async" />
+                <img src="guest images/ruchi poddar.webp" alt="Ruchi Poddar — Founder of MelonMe on Attitude of Gratitude Podcast" width="900" height="601" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="3">
-                <img src="guest images/kartik vijaymani.webp" alt="Karthik Vijayamani — Founder of Dubai's Talk Show" width="900" height="506" loading="lazy" decoding="async" />
+                <img src="guest images/disha odhrani.webp" alt="Disha Odhrani — Transformation Coach on Attitude of Gratitude Podcast" width="900" height="506" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="4">
-                <img src="guest images/meher rupa.webp" alt="Meher Rupa — Mindset and Communication Coach" width="900" height="506" loading="lazy" decoding="async" />
+                <img src="guest images/kartik vijaymani.webp" alt="Karthik Vijayamani — Founder of Dubai's Talk Show" width="900" height="506" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="5">
-                <img src="guest images/manoj hingorani.webp" alt="Manoj Hingorani — Entrepreneur and Speaker" width="900" height="506" loading="lazy" decoding="async" />
+                <img src="guest images/meher rupa.webp" alt="Meher Rupa — Mindset and Communication Coach" width="900" height="506" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="6">
-                <img src="guest images/shamin.webp" alt="Shamin Pateile — Founder of Holistic Pets" width="900" height="506" loading="lazy" decoding="async" />
+                <img src="guest images/manoj hingorani.webp" alt="Manoj Hingorani — Entrepreneur and Speaker" width="900" height="506" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="7">
-                <img src="guest images/AAMNA ANSARI.png" alt="Amna Ansari — Mental Well-being Coach" width="900" height="507" loading="lazy" decoding="async" />
+                <img src="guest images/shamin.webp" alt="Shamin Pateile — Founder of Holistic Pets" width="900" height="506" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="8">
-                <img src="guest images/RASHI SEJPAL.JPG" alt="Rashi Sejpal — Founder of iCraft Communications" width="900" height="601" loading="lazy" decoding="async" />
+                <img src="guest images/AAMNA ANSARI.png" alt="Amna Ansari — Mental Well-being Coach" width="900" height="507" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="9">
-                <img src="guest images/sarika govil.png" alt="Sarika Govil — Educator and Student Growth Mentor" width="900" height="600" loading="lazy" decoding="async" />
+                <img src="guest images/RASHI SEJPAL.JPG" alt="Rashi Sejpal — Founder of iCraft Communications" width="900" height="601" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="10">
-                <img src="guest images/SUNNY DHILLON.JPG" alt="Sunny Dhillon — Dubai Entrepreneur and Founder of #IStandWithDubai" width="900" height="601" loading="lazy" decoding="async" />
+                <img src="guest images/sarika govil.png" alt="Sarika Govil — Educator and Student Growth Mentor" width="900" height="600" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="11">
-                <img src="guest images/POOJA RAVAL SABR.JPG" alt="Pooja Raval — Founder of SABR Clothing Brand in Dubai" width="900" height="601" loading="lazy" decoding="async" />
+                <img src="guest images/SUNNY DHILLON.JPG" alt="Sunny Dhillon — Dubai Entrepreneur and Founder of #IStandWithDubai" width="900" height="601" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
 
               <div class="cf-card" data-idx="12">
+                <img src="guest images/POOJA RAVAL SABR.JPG" alt="Pooja Raval — Founder of SABR Clothing Brand in Dubai" width="900" height="601" loading="lazy" decoding="async" />
+                <div class="cf-shade"></div>
+              </div>
+
+              <div class="cf-card" data-idx="13">
                 <img src="guest images/DINESH NAUIYAL.JPG" alt="Dinesh Nautiyal — Music Composer and Singer" width="900" height="600" loading="lazy" decoding="async" />
                 <div class="cf-shade"></div>
               </div>
@@ -272,7 +267,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
 
-          <div class="cf-dots" id="cfDots"></div>
+          <p class="hero-guest-name" id="cfGuestName">Dr. Lamya Kamal with Sadhna Sharma</p>
+          <div class="hero-gallery-controls">
+            <button class="cf-btn" id="cfPrev" type="button" aria-label="Previous guest">&#8592;</button>
+            <div class="cf-dots" id="cfDots" aria-label="Choose guest photo"></div>
+            <button class="cf-btn" id="cfNext" type="button" aria-label="Next guest">&#8594;</button>
+            <button class="cf-btn" id="cfPause" type="button" aria-label="Pause guest slideshow" aria-pressed="false">&#10074;&#10074;</button>
+          </div>
 
         </div>
 
@@ -282,514 +283,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <!-- ── PLATFORMS ──────────────────────────────────── -->
-    <section id="watch" class="platforms section">
-      <div class="container platform-grid">
-        <div class="section-heading">
-          <p class="eyebrow"><span>Multi-Platform Presence</span></p>
-          <h2>Where serious listeners<br />come to grow</h2>
-          <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">Available across YouTube, Spotify, Apple Podcasts, and Amazon Music — connecting founders, professionals, and growth-focused listeners across the UAE and beyond.</p>
-        </div>
-        <div class="platform-cards fade-scroll">
-          <article class="listen-card scale-hover">
-            <div class="listen-icon">
-              <img src="icons/youtube.webp" alt="YouTube" width="64" height="64" loading="lazy" />
-            </div>
-            <p class="listen-desc">Watch full studio founder interviews and real business conversations.</p>
-            <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer"
-              class="listen-btn">Subscribe</a>
-          </article>
-
-          <article class="listen-card scale-hover">
-            <div class="listen-icon">
-              <img src="icons/spotify.webp" alt="Spotify" width="64" height="64" loading="lazy" />
-            </div>
-            <p class="listen-desc">Learn on the go with candid founder stories and mindset insights.</p>
-            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank"
-              rel="noopener noreferrer" class="listen-btn">Follow</a>
-          </article>
-
-          <article class="listen-card scale-hover">
-            <div class="listen-icon">
-              <img src="icons/apple podcast.webp" alt="Apple Podcasts" width="64" height="64" loading="lazy" />
-            </div>
-            <p class="listen-desc">Seamless audio episodes for deep, focused personal and business growth.</p>
-            <a href="https://podcasts.apple.com/us/podcast/attitude-of-gratitude/id1866928542" target="_blank"
-              rel="noopener noreferrer" class="listen-btn">Follow</a>
-          </article>
-
-          <article class="listen-card scale-hover">
-            <div class="listen-icon">
-              <img src="icons/audible logo.webp" alt="Amazon Music &amp; Audible" width="64" height="64" loading="lazy" />
-            </div>
-            <p class="listen-desc">Immersive long-form conversations with UAE entrepreneurs and experts.</p>
-            <a href="https://music.amazon.com/podcasts/5baef2ba-a9e9-4d23-8abf-ae8627404065/attitude-of-gratitude"
-              target="_blank" rel="noopener noreferrer" class="listen-btn">Listen</a>
-          </article>
-        </div>
-      </div>
-    </section>
+    <section id="watch" class="platforms section-tight"><div class="container centered">
+      <p class="eyebrow"><span>Watch or listen</span></p>
+      <div class="home-platforms">
+        <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer"><img src="/icons/youtube.webp" alt="" width="32" height="32" loading="lazy" />YouTube</a>
+        <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S" target="_blank" rel="noopener noreferrer"><img src="/icons/spotify.webp" alt="" width="32" height="32" loading="lazy" />Spotify</a>
+        <a href="https://podcasts.apple.com/us/podcast/attitude-of-gratitude/id1866928542" target="_blank" rel="noopener noreferrer"><img src="/icons/apple podcast.webp" alt="" width="32" height="32" loading="lazy" />Apple Podcasts</a>
+        <a href="https://music.amazon.com/podcasts/5baef2ba-a9e9-4d23-8abf-ae8627404065/attitude-of-gratitude" target="_blank" rel="noopener noreferrer"><img src="/icons/audible logo.webp" alt="" width="32" height="32" loading="lazy" />Amazon Music</a>
+      </div></div></section>
 
     <!-- ── EPISODES ───────────────────────────────────── -->
-    <section id="episodes" class="episodes section">
-      <div class="container">
-        <div class="section-heading section-heading-row" style="max-width: 1000px; flex-wrap: wrap;">
-          <div style="flex: 1 1 400px;">
-            <p class="eyebrow"><span>Featured Episodes</span></p>
-            <h2>Founder Stories, Business &amp; Mindset Conversations</h2>
-            <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">Unfiltered conversations with Dubai founders, industry specialists, and creators sharing what actually works — and what doesn’t.</p>
-          </div>
-          <a class="text-link" href="/episodes/"
-            style="white-space: normal; text-align: right; flex: 0 1 350px; margin-bottom: 4px;">Browse all 27 episodes in the archive &rarr;</a>
-        </div>
-        <div class="swiper episode-slider fade-scroll">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-          <a href="/episodes/pcos-weight-loss-insulin-resistance-dr-lamya-kamal/" class="episode-card card-solid scale-hover ds-block">
-            <div class="episode-thumb"><img src="/thumbnails/pcos-weight-loss-insulin-resistance-dr-lamya-kamal.webp" alt="PCOS Weight Loss: Why You Can’t Lose Weight | Insulin Resistance Explained" width="640" height="360" loading="eager" /><span class="play-badge">&#9654;</span></div>
-            <div class="episode-body"><h3>LATEST EPISODE</h3><p>PCOS Weight Loss: Why You Can’t Lose Weight | Insulin Resistance Explained</p></div>
-          </a>
-            </div>
-            <div class="swiper-slide">
-          <a href="/episodes/she-built-a-brand-around-one-word-sabr/" class="episode-card card-solid scale-hover ds-block">
-            <div class="episode-thumb"><img src="/thumbnails/she-built-a-brand-around-one-word-sabr.jpg" alt="She Built a Brand Around ONE Word — SABR with Pooja Raval" width="1280" height="720" loading="lazy" /><span class="play-badge">&#9654;</span></div>
-            <div class="episode-body"><h3>9 SEPTEMBER 2026</h3><p>She Built a Brand Around ONE Word — SABR</p></div>
-          </a>
-            </div>
-            <div class="swiper-slide">
-          <a href="/episodes/carrying-your-familys-emotional-pain/" class="episode-card card-solid scale-hover ds-block">
-            <div class="episode-thumb"><img src="/thumbnails/carrying-your-familys-emotional-pain.jpg" alt="Are You Carrying Your Family’s Emotional Pain? with Dr. Tanu Kaushal" width="1280" height="720" loading="lazy" /><span class="play-badge">&#9654;</span></div>
-            <div class="episode-body"><h3>19 AUGUST 2026</h3><p>Are You Carrying Your Family’s Emotional Pain?</p></div>
-          </a>
-            </div>
-            <div class="swiper-slide">
-          <a href="/episodes/dubai-real-estate-2026-buy-now-or-wait/" class="episode-card card-solid scale-hover ds-block">
-            <div class="episode-thumb"><img src="/thumbnails/dubai-real-estate-2026-buy-now-or-wait.jpg" alt="Dubai Real Estate 2026: Buy Now or Wait? The Truth About the Property Market" width="1280" height="720" loading="lazy" /><span class="play-badge">&#9654;</span></div>
-            <div class="episode-body"><h3>10 AUGUST 2026</h3><p>Dubai Real Estate 2026: Buy Now or Wait? The Truth About the Property Market</p></div>
-          </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/happy-marriages-communication-pooja-kataria/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/23.jpg" alt="The Truth About Happy Marriages with Pooja Kataria" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">&#9654;</span>
-                </div>
-                <div class="episode-body">
-                  <h3>3 AUGUST 2026</h3>
-                  <p>The Truth About Happy Marriages: <span class="highlight">It's Not Love, It's Communication</span></p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/science-weight-loss-fat-loss-fatima/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/22.jpg" alt="The Science Behind Weight Loss with Fatima" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">&#9654;</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 22</h3>
-                  <p>The Science Behind Weight Loss: <span class="highlight">Stop Chasing the Scale, Start Losing Fat</span></p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/fujairah-ultimate-sports-retreat/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/21.jpg" alt="Fujairah's Ultimate Sports Retreat with Hania" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">&#9654;</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 21</h3>
-                  <p>More Than a Staycation: <span class="highlight">Discover Fujairah's Ultimate Sports Retreat</span></p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/survive-18-years-music-industry-dinesh-nautiyal/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/20.jpg" alt="Survive 18 Years in the Music Industry with Dinesh Nautiyal" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">&#9654;</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 20</h3>
-                  <p>What Does It Really Take to Survive <span class="highlight">18 Years in the Music Industry?</span></p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/marketing-engine-business-growth-rashi-sejpal/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/19.jpg" alt="Marketing Isn't an Expense with Rashi Sejpal" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">&#9654;</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 19</h3>
-                  <p>Marketing Isn't an Expense: <span class="highlight">It's the Engine Behind Every Growing Business</span></p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/why-i-chose-dubai-when-everyone-else-was-leaving/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/18.jpg" alt="Why I Chose Dubai When Everyone Else Was Leaving with Sunny Dhillon" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">&#9654;</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 18</h3>
-                  <p>Why I Chose Dubai: <span class="highlight">When Everyone Else Was Leaving</span></p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/mental-load-mothers-feel-overwhelmed/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/17.jpg" alt="The Mental Load No One Talks About with Amna Ansari" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">&#9654;</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 17</h3>
-                  <p>The Mental Load No One Talks About: <span class="highlight">Why Mothers Feel Overwhelmed</span></p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/sarika-govil-education-parenting-podcast/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/16.webp" alt="Education Beyond Marks with Sarika Govil" width="960" height="540" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 16</h3>
-                  <p>Education Beyond Marks: <span class="highlight">Parents, Students &amp; Teachers Need This Conversation</span></p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/homoeopathy-explained-by-expert-myth-vs-science/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/15.webp" alt="Homoeopathy Explained with Dr. Devinder Kapoor" width="960" height="540" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 15</h3>
-                  <p>Homoeopathy Explained: <span class="highlight">Myth vs Science</span></p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/passion-over-comfort/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/1.webp" alt="Episode 1: Would you choose passion over comfort with Ruchi Poddar" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 1</h3>
-                  <p>Would you choose passion over comfort?</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/not-healing-after-trying-everything/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/2.webp" alt="Episode 2: Why are you not healing with Dr. Tanu Kaushal" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 2</h3>
-                  <p>Why are you not healing… even after trying everything?</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/happiness-is-something-you-unlock/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/3.webp" alt="Episode 3: Happiness is something you unlock with Anjana Sahney Thakker" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 3</h3>
-                  <p>Happiness isn’t something you chase… but unlock.</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/biggest-opportunity-ecommerce-dubai-2026/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/4.webp" alt="Episode 4: E-commerce in Dubai 2026 with Raina Lalchand" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 4</h3>
-                  <p>2026: the biggest opportunity for e-commerce in Dubai.</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/childs-future-shaped-before-age-6/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/5.webp" alt="Episode 5: Child's future shaped before age 6 with Nalini Zinu" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 5</h3>
-                  <p>What if your child’s future is shaped before the age of 6?</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/we-hurt-people-we-care-about/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/6.webp" alt="Episode 6: Why do we hurt the people we care about with Meher Rupa" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 6</h3>
-                  <p>Why do we hurt the people we care about… without realizing it?</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/pet-trying-to-tell-you-something/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/7.webp" alt="Episode 7: Is your pet trying to tell you something with Shamin Pateile" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 7</h3>
-                  <p>Is your pet trying to tell you something… but you’re not listening?</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/uncomfortable-talking-about-periods/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/8.webp" alt="Episode 8: Why are we still uncomfortable talking about periods with Nadine Audi" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 8</h3>
-                  <p>Why are we still uncomfortable talking about periods?</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/child-not-listening-watching-you/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/9.webp" alt="Episode 9: Your child is not listening to you, they are watching you with Charlotte D'Souza" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 9</h3>
-                  <p>Your child is not listening to you… they are watching you</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/angel-numbers-telling-you-something/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/10.webp" alt="Episode 10: Are angel numbers trying to tell you something with Kanikka Batra" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 10</h3>
-                  <p>Are angel numbers trying to tell you something?</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/child-isnt-struggling-system-is/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/11.webp" alt="Episode 11: What if your child isn't struggling, but the system is with Louise Dawson" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 11</h3>
-                  <p>What if your child isn’t struggling… but the system is?</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/sleeping-on-floor-to-building-stage-dubai/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/12.webp" alt="Episode 12: From sleeping on the floor to building his own stage in Dubai with Karthik Vijayamani" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 12</h3>
-                  <p>From sleeping on the floor… to building his own stage in Dubai</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/one-moment-can-change-your-life/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/13.webp" alt="Episode 13: What if one moment could completely change your life with Manoj Hingorani" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 13</h3>
-                  <p>What if one moment could completely change your life?</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="/episodes/problems-are-energy-imbalances/" class="episode-card card-solid scale-hover ds-block">
-                <div class="episode-thumb">
-                  <img src="thumbnails/14.webp" alt="Episode 14: What if your problems are not random, but energy imbalances with Disha Odhrani" width="1280" height="720" loading="lazy" />
-                  <span class="play-badge">▶</span>
-                </div>
-                <div class="episode-body">
-                  <h3>EPISODE 14</h3>
-                  <p>What if your problems are not random… but energy imbalances?</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-
-        <!-- CTA BELOW SLIDER -->
-        <div class="fade-scroll episodes-cta" style="text-align: center; margin-top: 60px;">
-          <h2 class="episodes-cta-heading"
-            style="font-family: var(--font-display); font-size: clamp(1.5rem, 6vw, 2.5rem); margin-bottom: 24px;">
-            Explore All Episodes &amp; Guest Stories &rarr;</h2>
-          <div class="episodes-cta-btns" style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-            <a href="/episodes/" class="button">👉 Browse All 26 Episodes</a>
-            <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer"
-              class="button button-outline">👉 Watch on YouTube</a>
-            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank"
-              rel="noopener noreferrer" class="button button-outline">👉 Listen on Spotify</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="episodes" class="episodes section"><div class="container">
+      <div class="section-heading section-heading-row"><div><p class="eyebrow"><span>Start here</span></p><h2>Conversations worth your time.</h2></div><a class="text-link" href="/episodes/">Browse all 27 episodes &rarr;</a></div>
+      <div class="swiper episode-slider"><div class="swiper-wrapper"><div class="swiper-slide"><a href="/episodes/pcos-weight-loss-insulin-resistance-dr-lamya-kamal/" class="episode-card card-solid ds-block"><div class="episode-thumb"><img src="/thumbnails/pcos-weight-loss-insulin-resistance-dr-lamya-kamal.webp" alt="PCOS Weight Loss: Why You Can’t Lose Weight | Insulin Resistance Explained" width="640" height="360" loading="lazy" /><span class="play-badge">&#9654;</span></div><div class="episode-body"><h3>LATEST EPISODE</h3><p>PCOS, Weight Loss &amp; Insulin Resistance</p></div></a></div>
+<div class="swiper-slide"><a href="/episodes/she-built-a-brand-around-one-word-sabr/" class="episode-card card-solid ds-block"><div class="episode-thumb"><img src="/thumbnails/she-built-a-brand-around-one-word-sabr.jpg" alt="She Built a Brand Around ONE Word — SABR" width="640" height="360" loading="lazy" /><span class="play-badge">&#9654;</span></div><div class="episode-body"><h3>Pooja Raval</h3><p>Building a Brand Around SABR</p></div></a></div>
+<div class="swiper-slide"><a href="/episodes/carrying-your-familys-emotional-pain/" class="episode-card card-solid ds-block"><div class="episode-thumb"><img src="/thumbnails/carrying-your-familys-emotional-pain.jpg" alt="Are You Carrying Your Family’s Emotional Pain?" width="640" height="360" loading="lazy" /><span class="play-badge">&#9654;</span></div><div class="episode-body"><h3>Dr. Tanu Kaushal</h3><p>Are You Carrying Your Family?s Emotional Pain?</p></div></a></div>
+<div class="swiper-slide"><a href="/episodes/dubai-real-estate-2026-buy-now-or-wait/" class="episode-card card-solid ds-block"><div class="episode-thumb"><img src="/thumbnails/dubai-real-estate-2026-buy-now-or-wait.jpg" alt="Dubai Real Estate 2026: Buy Now or Wait? The Truth About the Property Market" width="640" height="360" loading="lazy" /><span class="play-badge">&#9654;</span></div><div class="episode-body"><h3>Maithil Shah &amp; Nabil</h3><p>Dubai Real Estate: Buy Now or Wait?</p></div></a></div>
+<div class="swiper-slide"><a href="/episodes/happy-marriages-communication-pooja-kataria/" class="episode-card card-solid ds-block"><div class="episode-thumb"><img src="/thumbnails/23.jpg" alt="The Truth About Happy Marriages: It&#x27;s Not Love—It&#x27;s Communication" width="640" height="360" loading="lazy" /><span class="play-badge">&#9654;</span></div><div class="episode-body"><h3>Pooja Kataria</h3><p>What Makes a Marriage Work?</p></div></a></div>
+<div class="swiper-slide"><a href="/episodes/fujairah-ultimate-sports-retreat/" class="episode-card card-solid ds-block"><div class="episode-thumb"><img src="/thumbnails/21.jpg" alt="More Than a Staycation: Discover Fujairah&#x27;s Ultimate Sports Retreat" width="640" height="360" loading="lazy" /><span class="play-badge">&#9654;</span></div><div class="episode-body"><h3>Hania</h3><p>Inside Fujairah?s Sports Retreat</p></div></a></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div>
+    </div></section>
 
     <!-- ── BENEFITS ───────────────────────────────────── -->
-    <section id="benefits" class="benefits section">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow"><span>WHY PEOPLE KEEP WATCHING</span></p>
-          <h2>More Than Conversations — Real Growth in Every Episode</h2>
-          <p>This isn’t just content. It’s perspective, clarity, and lessons from people actually building in Dubai and beyond.</p>
-        </div>
-        <div class="fade-scroll responsive-grid-3">
-          <article class="card-outline scale-hover" style="padding: 30px;">
-            <div style="font-size: 2rem; margin-bottom: 16px;">🧠</div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--pink-bright);">REAL-WORLD INSIGHTS</h3>
-            <p>No theory. Just practical lessons, mistakes, and strategies from founders and specialists in the game.</p>
-          </article>
-          <article class="card-outline scale-hover" style="padding: 30px;">
-            <div style="font-size: 2rem; margin-bottom: 16px;">🎯</div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--pink-bright);">CLARITY &amp; DIRECTION</h3>
-            <p>Cut through the noise and understand what actually works in business, branding, and life.</p>
-          </article>
-          <article class="card-outline scale-hover" style="padding: 30px;">
-            <div style="font-size: 2rem; margin-bottom: 16px;">🚀</div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--pink-bright);">MINDSET UPGRADE</h3>
-            <p>Shift how you think, decide, and take action with grounded conversations on resilience and self-growth.</p>
-          </article>
-          <article class="card-outline scale-hover" style="padding: 30px;">
-            <div style="font-size: 2rem; margin-bottom: 16px;">🌍</div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--pink-bright);">EXPOSURE TO BIG THINKING
-            </h3>
-            <p>Surround yourself with ambitious minds, UAE entrepreneurs, and growth-driven perspectives.</p>
-          </article>
-          <article class="card-outline scale-hover" style="padding: 30px; text-align: center;">
-            <div style="font-size: 2rem; margin-bottom: 16px;">⚡</div>
-            <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--pink-bright);">LEARN FROM OTHERS’ MISTAKES
-            </h3>
-            <p>Skip years of trial and error by understanding what works—and what doesn’t—straight from people who lived it.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+
 
     <!-- ── ABOUT HOST ──────────────────────────────────── -->
-    <section id="host" class="about section fade-scroll">
-      <div class="container about-grid">
-        <div class="about-image-wrap">
-          <picture>
-            <source srcset="host-image.webp" type="image/webp" />
-            <img src="host image.JPG" alt="Sadhna Sharma — Host of The Attitude of Gratitude Podcast in Dubai" width="1000" height="562" loading="lazy" decoding="async" />
-          </picture>
-        </div>
-        <div class="about-copy">
-          <p class="eyebrow"><span>ABOUT THE HOST • SADHNA SHARMA</span></p>
-          <h2>Meet Sadhna Sharma: Guiding Authentic Founder &amp; Growth Stories</h2>
-          <p><strong>The Attitude of Gratitude Podcast</strong> is created and hosted by <strong>Sadhna Sharma</strong> in Dubai, UAE — bringing together entrepreneurs, brand builders, educators, and wellness leaders for candid long-form conversations.</p>
-          <p>Blending founder storytelling, personal branding, and practical mindset insight, each episode bridges the gap between building a successful business and sustaining personal fulfilment — without scripted answers or surface-level clichés.</p>
-          <p>Operated under UAE-licensed media and advertising entity <strong>Yellow Drapes LLC</strong> (Sharjah Media City Free Zone), the show serves both listeners seeking real-world perspective and founders looking to share their brand story.</p>
-          <p style="margin-top: 16px; color: var(--pink-bright); font-weight: 600; font-style: italic;">👉 Backed by a 70,000+ combined social media &amp; listener ecosystem across platforms</p>
-
-          <div class="about-points" style="margin-top: 32px;">
-            <div>
-              <strong>🔥 Real, Unfiltered Conversations</strong>
-              <span
-                style="display: block; font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 6px; line-height: 1.5;">Guided interviews that bring out the real founder journey, lessons, and expertise behind your brand.</span>
-            </div>
-            <div>
-              <strong>🚀 Built for Founders &amp; Ambitious Minds</strong>
-              <span
-                style="display: block; font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 6px; line-height: 1.5;">Covering e-commerce, real estate, marketing, brand building, leadership, and personal resilience in the UAE.</span>
-            </div>
-            <div>
-              <strong>🎯 Paid Guest &amp; Brand Collaboration Options</strong>
-              <span
-                style="display: block; font-size: 0.95rem; color: rgba(255,255,255,0.7); margin-top: 6px; line-height: 1.5;">Transparent remote and Dubai studio appearance packages with multi-platform distribution and social amplification.</span>
-            </div>
-          </div>
-
-          <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
-            <a href="/get-featured/" class="button">👉 Explore Guest Packages &rarr;</a>
-            <a href="https://open.spotify.com/show/39X2rBLrFVD4sJPtFQPq3S?si=HgBFL3PFRHqBRTqNPYVkEA" target="_blank"
-              rel="noopener noreferrer" class="button button-outline">👉 Listen on Spotify</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="host" class="about section"><div class="container about-grid">
+      <div class="about-image-wrap"><img src="/host-image.webp" alt="Sadhna Sharma, host of Attitude of Gratitude" width="1000" height="562" loading="lazy" /></div>
+      <div class="about-copy"><p class="eyebrow"><span>Your host</span></p><h2>Meet Sadhna Sharma.</h2><p>From Dubai, Sadhna brings founders, creators, and experts together for honest conversations about work, wellbeing, and personal growth.</p><p>Curious questions. Real experiences. Something to take with you.</p><a class="text-link" href="/episodes/">Find your next conversation &rarr;</a></div>
+    </div></section>
 
     <!-- ── GUEST PACKAGES PREVIEW (COMMERCIAL ROUTE) ──── -->
-    <section id="collaborate" class="section" style="background: rgba(12, 12, 22, 0.55); border-top: 1px solid rgba(255,45,120,0.1); border-bottom: 1px solid rgba(255,45,120,0.1);">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow"><span>PAID GUEST APPEARANCES &amp; BRAND PROMOTION</span></p>
-          <h2>Share Your Founder or Brand Story on the Podcast</h2>
-          <p style="max-width: 720px; margin: 16px auto 0; line-height: 1.6;">We offer transparent paid podcast guest packages for founders, experts, and brands in Dubai and remotely — reviewed for audience fit and produced under our UAE media permit.</p>
-        </div>
-        <div class="fade-scroll responsive-grid-3" style="margin-top: 36px;">
-          <article class="card-outline scale-hover" style="padding: 30px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <p style="color: #a4a4b2; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Remote Session • Recording Only</p>
-              <h3 style="font-size: 1.4rem; margin-bottom: 8px; color: #fff;">Starter Visibility — <span style="color: var(--pink-bright);">AED 444</span></h3>
-              <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.8);">Online guided podcast recording session for international or budget-conscious guests. <em>Note: Excludes editing, platform publishing, and paid ad promotion.</em></p>
-            </div>
-            <a href="/get-featured/#packages" class="text-link" style="margin-top: 20px; display: inline-block;">Compare package details &rarr;</a>
-          </article>
-
-          <article class="card-outline scale-hover" style="padding: 30px; border-color: rgba(255,45,120,0.4); display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <p style="color: var(--pink-bright); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Dubai Studio • Editing + Promotion</p>
-              <h3 style="font-size: 1.4rem; margin-bottom: 8px; color: #fff;">Founder Authority — <span style="color: var(--pink-bright);">AED 1,499</span></h3>
-              <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.8);">In-person Dubai studio recording, professional editing, multi-platform distribution, short-form reels/clips, and targeted Meta/IG ad promotion.</p>
-            </div>
-            <a href="/get-featured/#packages" class="text-link" style="margin-top: 20px; display: inline-block;">View studio deliverables &rarr;</a>
-          </article>
-
-          <article class="card-outline scale-hover" style="padding: 30px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <p style="color: #F8991D; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px;">Dubai Studio • Full Multi-Channel Push</p>
-              <h3 style="font-size: 1.4rem; margin-bottom: 8px; color: #fff;">Market Leader — <span style="color: var(--pink-bright);">AED 1,999</span></h3>
-              <p style="font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.8);">Full Dubai studio production, publishing across all platforms, short-form reels, audience growth push, and extended Meta/IG &amp; TikTok promotion. Optional product placement (+AED 250).</p>
-            </div>
-            <a href="/get-featured/#packages" class="text-link" style="margin-top: 20px; display: inline-block;">Apply for a guest slot &rarr;</a>
-          </article>
-        </div>
-        <div style="text-align: center; margin-top: 40px;">
-          <a href="/get-featured/" class="button">👉 Compare Packages &amp; Apply on /get-featured/</a>
-        </div>
-      </div>
-    </section>
+    <section id="collaborate" class="section"><div class="container"><div class="home-guest-banner card-outline">
+      <div><p class="eyebrow"><span>Be part of the conversation</span></p><h2>Your story belongs here.</h2><p>Paid guest appearances for founders, experts, and brands. Remote recording from AED 444; Dubai studio packages from AED 1,499.</p></div>
+      <a class="button" href="/get-featured/">Explore guest packages &rarr;</a>
+    </div></div></section>
 
     <!-- ── REELS ──────────────────────────────────────── -->
     <section class="reels section">
@@ -798,7 +325,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="flex: 1 1 400px;">
             <p class="eyebrow"><span>CONTENT PREVIEW</span></p>
             <h2>Short Clips. Big Realizations.</h2>
-            <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">Quick, high-impact moments from our studio conversations — cut for social discovery across YouTube Shorts, Instagram Reels, and TikTok.</p>
+            <p style="margin-top: 16px; font-size: 1.08rem; max-width: 600px; line-height: 1.6;">A few moments to spark your next conversation.</p>
           </div>
           <a class="text-link" href="https://www.youtube.com/@AttitudeOfGratitude-x9c/shorts" target="_blank"
             rel="noopener noreferrer"
@@ -829,30 +356,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </article>
-          <article class="reel-card"
-            style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
-            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;"
-              src="https://www.youtube-nocookie.com/embed/5EwQ7zOmHdc"
-              title="Attitude of Gratitude Podcast Short Clip 4" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          </article>
-          <article class="reel-card"
-            style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
-            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;"
-              src="https://www.youtube-nocookie.com/embed/QcnXm7U7AmY"
-              title="Attitude of Gratitude Podcast Short Clip 5" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          </article>
-          <article class="reel-card"
-            style="flex: 0 0 280px; padding: 0; border: none; border-radius: 16px; overflow: hidden; height: auto; scroll-snap-align: start;">
-            <iframe style="width: 100%; aspect-ratio: 9/16; border: none; display: block;"
-              src="https://www.youtube-nocookie.com/embed/DziSLnBd5W8"
-              title="Attitude of Gratitude Podcast Short Clip 6" loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-          </article>
+
+
+
         </div>
       </div>
     </section>
@@ -860,53 +366,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <!-- ── WHO IS IT FOR ───────────────────────────────── -->
-    <section id="who" class="who section">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow"><span>Target Audience</span></p>
-          <h2>Who This Podcast Is For</h2>
-          <p>If you're driven to grow, build, and become better — this podcast is for you.</p>
-        </div>
-        <div class="fade-scroll responsive-grid-3">
-          <article class="card-solid scale-hover" style="padding: 30px;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">🚀 AMBITIOUS STARTUP OWNERS
-            </h3>
-            <p>Learn from real founder journeys, mistakes, and strategies that actually build businesses in the UAE.</p>
-          </article>
-          <article class="card-solid scale-hover" style="padding: 30px;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">🎓 AMBITIOUS STUDENTS</h3>
-            <p>Get exposed to real-world thinking, opportunities, and insights beyond textbooks.</p>
-          </article>
-          <article class="card-solid scale-hover" style="padding: 30px;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">👩‍💼 AMBITIOUS WOMEN</h3>
-            <p>Stories, perspectives, and conversations designed to inspire confidence, clarity, and leadership growth.</p>
-          </article>
-          <article class="card-solid scale-hover" style="padding: 30px;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">📈 GROWTH-DRIVEN
-              PROFESSIONALS</h3>
-            <p>Upgrade your mindset, decision-making, and career with insights from people who’ve done it.</p>
-          </article>
-          <article class="card-solid scale-hover" style="padding: 30px; text-align: center;">
-            <h3 style="font-size: 1.2rem; margin-bottom: 12px; color: var(--pink-bright);">🧠 LIFELONG LEARNERS</h3>
-            <p>If you believe in learning from others’ experiences, avoiding mistakes, and evolving constantly — you
-              belong here.</p>
-          </article>
-        </div>
-
-        <!-- CTA BELOW SECTION -->
-        <div class="fade-scroll episodes-cta" style="text-align: center; margin-top: 60px;">
-          <h2 class="episodes-cta-heading"
-            style="font-family: var(--font-display); font-size: clamp(1.5rem, 6vw, 2.5rem); margin-bottom: 24px;">Start
-            Watching. Start Growing.</h2>
-          <div class="episodes-cta-btns" style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-            <a href="https://www.youtube.com/@AttitudeOfGratitude-x9c" target="_blank" rel="noopener noreferrer"
-              class="button">👉 Watch on YouTube</a>
-            <a href="/get-featured/"
-              class="button button-outline">👉 Apply to Get Featured</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section id="who" class="who section-tight"><div class="container centered home-about-show"><p class="eyebrow"><span>About the show</span></p><h2>For curious minds.</h2><p>Business, health, relationships, and personal growth ? real experiences from people with a story to share.</p></div></section>
 
     <!-- ── COMMUNITY ──────────────────────────────────── -->
     <section class="lead-magnet section-tight">
@@ -1087,10 +547,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const AUTO_MS = 3200;
       const SIDE_GAP = 180;
       const ROT_DEG = 48;
-      const SCALE_CTR = 0.95;
+      const SCALE_CTR = 1;
       const SCALE_ADJ = 0.80;
       const SCALE_FAR = 0.65;
-      const Z_CTR = 140;
+      const Z_CTR = 0;
       const Z_ADJ = -40;
       const Z_FAR = -110;
       const MAX_SIDE = 2;
@@ -1102,12 +562,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       const TOTAL = cards.length;
       let active = 0;
       let timer = null;
+      let paused = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       let dragging = false;
       let dragX = 0;
 
       /* build dots */
       cards.forEach((_, i) => {
-        const d = document.createElement('span');
+        const d = document.createElement('button');
+        d.type = 'button';
+        d.setAttribute('aria-label', 'Show guest photo ' + (i + 1));
         d.className = 'cf-dot' + (i === 0 ? ' active' : '');
         d.addEventListener('click', () => go(i));
         dotsWrap.appendChild(d);
@@ -1122,6 +585,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           else if (offset < -Math.floor(TOTAL / 2)) offset += TOTAL;
 
           const abs = Math.abs(offset);
+          card.classList.toggle('is-active', abs === 0);
 
           if (abs > MAX_SIDE) {
             card.style.opacity = '0';
@@ -1134,11 +598,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           card.style.pointerEvents = 'auto';
           card.style.zIndex = String(10 - abs);
 
-          const tx = offset * SIDE_GAP;
+          const tx = offset * Math.min(SIDE_GAP, stage.clientWidth * 0.30);
           const rotY = offset === 0 ? 0 : offset > 0 ? -ROT_DEG : ROT_DEG;
           const scale = abs === 0 ? SCALE_CTR : abs === 1 ? SCALE_ADJ : SCALE_FAR;
           const tz = abs === 0 ? Z_CTR : abs === 1 ? Z_ADJ : Z_FAR;
-          const ty = abs === 0 ? -10 : abs * 10;
+          const ty = abs === 0 ? 0 : abs * 10;
 
           card.style.transform =
             `translateX(${tx}px) translateY(${ty}px) translateZ(${tz}px) rotateY(${rotY}deg) scale(${scale})`;
@@ -1152,7 +616,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           card.classList.toggle('is-active', abs === 0);
         });
 
-        dots.forEach((d, i) => d.classList.toggle('active', i === active));
+        dots.forEach((d, i) => { d.classList.toggle('active', i === active); d.setAttribute('aria-pressed', String(i === active)); });
+        const caption = document.getElementById('cfGuestName');
+        if (caption) caption.textContent = active === 0 ? 'Dr. Lamya Kamal with Sadhna Sharma' : cards[active].querySelector('img').alt.split('\u2014')[0].trim();
       }
 
       /* ── NAVIGATE ───────────────────────────────────── */
@@ -1176,7 +642,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       /* ── AUTO-ADVANCE ───────────────────────────────── */
       function resetAuto() {
         clearInterval(timer);
-        timer = setInterval(() => step(1), AUTO_MS);
+        if (!paused) timer = setInterval(() => step(1), AUTO_MS);
       }
 
       const cf = document.getElementById('cf');
@@ -1195,11 +661,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         cf.addEventListener('touchend', e => onDragEnd(e.changedTouches[0].clientX));
       }
 
-      document.addEventListener('keydown', e => {
-        if (e.key === 'ArrowLeft') step(-1);
-        if (e.key === 'ArrowRight') step(1);
+      cf.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
       });
 
+      const pauseButton = document.getElementById('cfPause');
+      function syncPause() {
+        pauseButton.setAttribute('aria-pressed', String(paused));
+        pauseButton.setAttribute('aria-label', paused ? 'Play guest slideshow' : 'Pause guest slideshow');
+        pauseButton.textContent = paused ? '\u25b6' : '\u275a\u275a';
+      }
+      pauseButton.addEventListener('click', () => { paused = !paused; syncPause(); resetAuto(); });
+      window.addEventListener('resize', layout);
+      syncPause();
       layout();
       resetAuto();
 

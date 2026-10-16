@@ -88,10 +88,15 @@ for page in pages:
     html = page.read_text(encoding='utf-8')
     root = cssselect2.ElementWrapper.from_html_root(DOM(html).root)
     css = shared + '\n' + '\n'.join(re.findall(r'<style[^>]*>(.*?)</style>', html, re.S))
-    assert 'styles.css?v=20261016-layout2' in html, page
+    assert re.search(r'styles.css\?v=20261016-(?:layout2|home3)', html), page
     assert "const navToggle =" not in html, page
     for width in WIDTHS:
         rules = matcher(css, width)
+        if page == ROOT / 'index.html':
+            gallery = root.query('.hero-gallery-wrap')
+            assert computed(gallery, rules).get('grid-row') == ('1' if width <= 700 else 'auto'), (width, 'hero guest placement')
+            assert root.query('.cf-card img').etree_element.get('fetchpriority') == 'high'
+            checks += 2
         for img in root.query_all('.episode-thumb img'):
             actual = computed(img, rules)
             frame = computed(img.parent, rules)

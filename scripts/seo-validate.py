@@ -19,6 +19,7 @@ EXPECTED_PAGES = len(EPISODES) + 3
 
 errors = []
 warnings = []
+referenced_assets = set()
 stats = {
     "indexable_pages": 0,
     "noindex_pages": 0,
@@ -36,6 +37,7 @@ def check_file_exists(rel_or_abs, source_page):
         full = os.path.normpath(os.path.join(os.path.dirname(source_page), clean.replace("/", os.sep)))
     if os.path.isdir(full):
         full = os.path.join(full, "index.html")
+    referenced_assets.add(full)
     if not os.path.exists(full):
         errors.append(f"[BROKEN ASSET/LINK] {os.path.relpath(source_page, ROOT)} -> {rel_or_abs} (resolved: {full})")
     else:
@@ -198,17 +200,13 @@ def main():
     if set(cards) != expected_cards or len(cards) != len(EPISODES):
         errors.append('[EPISODE ARCHIVE INVENTORY MISMATCH]')
 
-    # Validate image byte budgets
-    for folder in ["", "guest images", "thumbnails", "icons"]:
-        d = os.path.join(ROOT, folder) if folder else ROOT
-        if not os.path.isdir(d):
-            continue
-        for fn in os.listdir(d):
-            if fn.lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
-                stats["images_checked"] += 1
-                sz_kb = os.path.getsize(os.path.join(d, fn)) / 1024.0
-                if sz_kb > 350:
-                    errors.append(f"[IMAGE EXCEEDS 350KB BUDGET] {folder}/{fn}: {sz_kb:.1f} KB")
+    # Check assets actually referenced by published pages; retain local camera originals.
+    for asset in sorted(referenced_assets):
+        if asset.lower().endswith((".png", ".jpg", ".jpeg", ".webp")) and os.path.isfile(asset):
+            stats["images_checked"] += 1
+            sz_kb = os.path.getsize(asset) / 1024.0
+            if sz_kb > 350:
+                errors.append(f"[IMAGE EXCEEDS 350KB BUDGET] {os.path.relpath(asset, ROOT)}: {sz_kb:.1f} KB")
 
     print("=" * 64)
     print("ATTITUDE OF GRATITUDE — SEO & TECHNICAL VALIDATION REPORT")
