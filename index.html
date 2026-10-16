@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=20261016-layout2" />
 
   <script type="application/ld+json">
   {
@@ -127,97 +127,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   </script>
 
-  <style>
-    /* MOBILE CRITICAL OVERRIDES — loaded inline to bypass cache */
-    @media (max-width: 760px) {
-      .hero-actions {
-        flex-direction: row !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        gap: 8px !important;
-        align-items: center !important;
-        justify-content: center !important;
-      }
-
-      .hero-actions .button {
-        width: auto !important;
-        flex: 1 1 0% !important;
-        text-align: center !important;
-        box-sizing: border-box !important;
-        padding: 12px 10px !important;
-        font-size: 0.8rem !important;
-        white-space: nowrap !important;
-      }
-
-      .responsive-grid-3 {
-        grid-template-columns: 1fr !important;
-        gap: 16px !important;
-      }
-
-      .card-outline,
-      .card-solid {
-        min-width: 0 !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-      }
-
-      .hero-copy {
-        align-items: center !important;
-        text-align: center !important;
-      }
-
-      .hero-copy h1 {
-        font-size: clamp(2.2rem, 8.5vw, 3.2rem) !important;
-      }
-
-      .section-heading {
-        text-align: center !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-      }
-
-      .section-heading-row {
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr !important;
-        text-align: center !important;
-      }
-
-      .lead-magnet-card {
-        flex-direction: column !important;
-        text-align: center !important;
-      }
-
-      .lead-magnet-card>div {
-        flex: 1 1 auto !important;
-        min-width: 0 !important;
-        max-width: 100% !important;
-      }
-
-      .lead-magnet-card .button {
-        width: 100% !important;
-        box-sizing: border-box !important;
-        white-space: normal !important;
-        line-height: 1.4 !important;
-      }
-
-      .episodes-cta-btns {
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 12px !important;
-      }
-
-      .episodes-cta-btns .button {
-        width: 100% !important;
-        max-width: 320px !important;
-        box-sizing: border-box !important;
-      }
-    }
-  </style>
 </head>
 
 
@@ -1100,20 +1009,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <script>
     // Nav toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('open');
-        navToggle.setAttribute('aria-expanded', String(isOpen));
-      });
-      navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('open');
-          navToggle.setAttribute('aria-expanded', 'false');
-        });
-      });
-    }
+    // Navigation is initialized once by site-components.js.
 
     // Forms
     document.querySelectorAll('form').forEach(form => {
@@ -1313,6 +1209,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      if (typeof Swiper !== 'function') return;
       new Swiper('.episode-slider', {
         slidesPerView: 1,
         spaceBetween: 24,
@@ -1369,7 +1266,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     })();
   </script>
-  <script src="/site-components.js"></script>
+  <script src="/site-components.js?v=20261016-layout2"></script>
 </body>
 
 </html>

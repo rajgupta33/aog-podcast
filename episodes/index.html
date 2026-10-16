@@ -43,11 +43,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="../styles.css?v=4" />
+  <link rel="stylesheet" href="../styles.css?v=20261016-layout2" />
   <style>
     .ep-index-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
       gap: 24px;
       margin-top: 40px;
     }
@@ -337,7 +337,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ── EPISODE GRID ───────────────────────── -->
     <section class="episodes section-tight">
       <div class="container">
-        <div class="ep-index-grid fade-scroll">
+        <div class="ep-index-grid">
           <a href="/episodes/pcos-weight-loss-insulin-resistance-dr-lamya-kamal/" class="episode-card card-solid scale-hover ds-block">
             <div class="episode-thumb"><img src="/thumbnails/pcos-weight-loss-insulin-resistance-dr-lamya-kamal.webp" alt="PCOS Weight Loss: Why You Can’t Lose Weight | Insulin Resistance Explained" width="640" height="360" loading="eager" /><span class="play-badge">&#9654;</span></div>
             <div class="episode-body"><h3>LATEST EPISODE</h3><p>PCOS Weight Loss: Why You Can’t Lose Weight | Insulin Resistance Explained</p></div>
@@ -533,14 +533,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </footer>
 
   <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks  = document.querySelector('.nav-links');
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('open');
-        navToggle.setAttribute('aria-expanded', String(isOpen));
-      });
-    }
+    // Navigation is initialized once by site-components.js.
     window.addEventListener('scroll', () => {
       const header = document.querySelector('.site-header');
       if (header) {
@@ -554,6 +547,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     document.querySelectorAll('.fade-scroll').forEach(el => io.observe(el));
   </script>
 
-  <script src="/site-components.js" defer></script>
+  <script src="/site-components.js?v=20261016-layout2" defer></script>
 </body>
 </html>

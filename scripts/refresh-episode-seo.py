@@ -61,7 +61,7 @@ def main():
             <div class="episode-thumb"><img src="{escape(ep['thumbnail'])}" alt="{escape(ep['headline'])}" width="640" height="360" loading="{'eager' if i < 3 else 'lazy'}" /><span class="play-badge">&#9654;</span></div>
             <div class="episode-body"><h3>{label}</h3><p>{escape(ep['headline'])}</p></div>
           </a>''')
-    text = re.sub(r'(<div class="ep-index-grid fade-scroll">).*?(\n        </div>)', lambda m: m[1] + '\n' + '\n'.join(cards) + m[2], text, count=1, flags=re.S)
+    text = re.sub(r'(<div class="ep-index-grid(?: fade-scroll)?">).*?(\n        </div>)', lambda m: m[1] + '\n' + '\n'.join(cards) + m[2], text, count=1, flags=re.S)
     text = re.sub(r'all \d+ episodes', f'all {len(episodes)} episodes', text)
     archive.write_text(text, encoding='utf-8')
 

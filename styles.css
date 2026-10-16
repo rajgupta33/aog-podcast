@@ -27,7 +27,7 @@
 
   --radius: 28px;
   --radius-small: 18px;
-  --container: min(1200px, calc(100vw - 40px));
+  --container: min(1200px, 100%);
 
   --font-hero: 'DM Serif Display', serif;
   --font-display: 'Cormorant Garamond', serif;
@@ -63,8 +63,9 @@
 
 /* ─── SCROLL REVEAL ─────────────────────────────────── */
 .fade-scroll {
-  opacity: 0;
-  transform: translateY(30px);
+  /* Large sections must remain readable even if a reveal observer never fires. */
+  opacity: 1;
+  transform: none;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
@@ -133,6 +134,7 @@ body::after {
 img,
 video {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -343,7 +345,7 @@ h4 {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding-top: 16px;
+  padding-top: 4px;
   transition: padding 0.3s ease;
 }
 
@@ -360,8 +362,8 @@ h4 {
 }
 
 .site-header.scrolled {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .site-header.scrolled::before {
@@ -421,9 +423,9 @@ h4 {
 }
 
 .brand-logo {
-  width: auto;
-  max-width: clamp(120px, 20vw, 160px);
-  max-height: 120px;
+  width: 64px;
+  max-width: 64px;
+  max-height: 64px;
   height: auto;
   filter: drop-shadow(0 0 18px rgba(255, 45, 120, 0.4));
 }
@@ -1032,6 +1034,8 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
 }
 
 .episode-card {
+  min-width: 0;
+  padding: 0;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 45, 120, 0.15);
   border-radius: var(--radius);
@@ -1049,19 +1053,21 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
 .episode-thumb {
   position: relative;
   overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #080810;
 }
 
 .episode-thumb img {
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  object-position: top;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.4s ease;
   filter: brightness(0.88) saturate(0.85);
 }
 
 .episode-card:hover .episode-thumb img {
-  transform: scale(1.06);
+  transform: none;
   filter: brightness(0.95) saturate(1);
 }
 
@@ -1611,19 +1617,7 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
   }
 }
 
-@media (max-width: 760px) {
-  .section { padding: 52px 0; }
-  .section-tight { padding: 28px 0 40px; }
-  body, main { overflow-x: hidden; }
-  .container { width: calc(100vw - 32px); }
-
-  .navbar { border-radius: 28px; align-items: center; padding: 10px 16px; }
-
-  .brand-logo { width: auto; max-width: min(190px, calc(100vw - 80px)); max-height: 48px; }
-
-  .eyebrow { font-size: 0.65rem; line-height: 1.4; justify-content: center; }
-  .eyebrow span { max-width: 260px; }
-
+@media (max-width: 1080px) {
   .nav-toggle {
     display: block;
     margin-left: auto;
@@ -1662,6 +1656,22 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
     visibility: visible;
     transform: translateY(0);
   }
+
+}
+
+@media (max-width: 760px) {
+  .section { padding: 52px 0; }
+  .section-tight { padding: 28px 0 40px; }
+  body, main { overflow-x: hidden; }
+  .container { width: calc(100% - 32px); }
+
+  .navbar { border-radius: 28px; align-items: center; padding: 10px 16px; }
+
+  .brand-logo { width: auto; max-width: min(190px, calc(100vw - 80px)); max-height: 48px; }
+
+  .eyebrow { font-size: 0.65rem; line-height: 1.4; justify-content: center; }
+  .eyebrow span { max-width: 260px; }
+
 
   .hero { min-height: auto; padding-top: 10px; padding-bottom: 48px; }
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
@@ -2374,8 +2384,9 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
 /* ── MOBILE BRAND SIZING overrides ── */
 @media (max-width: 760px) {
   .brand-logo {
-    max-width: 80px !important;
-    max-height: 80px !important;
+    width: 44px;
+    max-width: 44px !important;
+    max-height: 44px !important;
   }
   .brand-text-top {
     font-size: 0.75rem !important;
@@ -2383,4 +2394,78 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
   .brand-text-mid {
     font-size: 1.4rem !important;
   }
+}
+
+/* Responsive safeguards shared by the archive, episode and booking pages. */
+:where(.container, .details-grid, .footer-grid, .input-row, .grid-2, .grid-3) > * {
+  min-width: 0;
+}
+:where(h1, h2, h3, p, .button, .button-outline, .text-link) {
+  overflow-wrap: break-word;
+}
+:where(section[id], footer[id]) { scroll-margin-top: 100px; }
+.nav-toggle { min-width: 44px; min-height: 44px; flex-shrink: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+html.nav-open, html.nav-open body { overflow: hidden; }
+.episode-body p { margin-bottom: 0; }
+.episode-card { height: 100%; }
+.floating-label-group :is(input, textarea, select) { min-width: 0; max-width: 100%; }
+
+/* Keep all episodes accessible if the optional carousel library cannot load. */
+.episode-slider:not(.swiper-initialized) { overflow: visible; }
+.episode-slider:not(.swiper-initialized) .swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 24px;
+  transform: none;
+}
+.episode-slider:not(.swiper-initialized) :is(.swiper-button-prev, .swiper-button-next, .swiper-pagination) { display: none; }
+
+@media (max-width: 1080px) {
+  .nav-links {
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    justify-content: flex-start;
+    padding: 96px 24px 32px;
+    gap: 20px;
+  }
+  .nav-links > a { max-width: 100%; text-align: center; }
+  .site-header .brand { gap: 10px; min-width: 0; }
+}
+@media (max-width: 760px) {
+  .site-header, .site-header.scrolled { padding: 0; }
+  .site-header .navbar { gap: 10px; }
+  .site-header .brand-text-top { font-size: .65rem !important; }
+  .site-header .brand-text-mid { font-size: 1.25rem !important; }
+  .site-header .brand-logo { flex: 0 0 44px; object-fit: contain; }
+  .footer .container { width: 100%; }
+  .episode-body { padding: 18px; }
+  .episode-body h3 { font-size: 1rem; }
+  .hero-actions { flex-wrap: wrap; }
+  .hero-actions .button { white-space: normal !important; min-width: 0; line-height: 1.4; }
+  .funnel-section .button, .form-submit-btn { white-space: normal; line-height: 1.4; }
+  .floating-label-group { display: flex; flex-direction: column; gap: 8px; }
+  .floating-label-group label {
+    position: static;
+    order: -1;
+    transform: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    color: var(--text) !important;
+    font-size: .9rem;
+    line-height: 1.4;
+    pointer-events: auto;
+  }
+}
+@media (max-width: 480px) {
+  .hero-actions { flex-direction: column !important; }
+  .hero-actions .button { width: 100% !important; flex: 0 1 auto !important; padding: 12px 16px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .fade-up, .fade-scroll { opacity: 1; transform: none; }
 }
