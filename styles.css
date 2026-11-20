@@ -910,14 +910,24 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
 }
 
 .platform-pill {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   padding: 12px 24px;
   font-weight: 700;
   border-radius: 999px;
   text-decoration: none;
+  white-space: nowrap;
   transition: transform 0.3s, border-color 0.3s;
+}
+
+.platform-pill img {
+  width: 24px;
+  height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .platform-pill:hover {
@@ -1536,7 +1546,10 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
 }
 
 .footer-brand .brand-logo {
-  width: min(240px, 100%);
+  width: 56px;
+  max-width: 56px;
+  max-height: 56px;
+  height: auto;
 }
 
 /* ─── DIVIDERS ───────────────────────────────────────── */
@@ -1742,8 +1755,8 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
   .footer-grid > div:first-child { display: flex; flex-direction: column; align-items: center; }
   .footer > .container > div:first-child > p { max-width: 100%; font-size: .9rem; }
   .footer ul { justify-items: center; word-break: break-word; overflow-wrap: break-word; }
-  .footer-brand { margin-bottom: 12px; display: inline-block; flex-shrink: 0; }
-  .footer-brand .brand-logo { width: 220px !important; max-width: 100% !important; height: auto !important; max-height: none !important; object-fit: contain; }
+  .footer-brand { margin-bottom: 12px; display: inline-flex; align-items: center; flex-shrink: 0; }
+  .footer-brand .brand-logo { width: 44px !important; max-width: 44px !important; height: auto !important; max-height: 44px !important; object-fit: contain; }
   .social-icons { justify-content: center !important; display: flex !important; flex-wrap: wrap; }
   .footer-bottom { padding-left: 20px; padding-right: 20px; }
 
@@ -1792,7 +1805,7 @@ h3, h4, .ep-about h2, .footer h3, .pkg-title {
   /* Platform pills row */
   .mini-platform-row { gap: 8px; flex-wrap: wrap; justify-content: center; }
   .platform-pill { padding: 8px 14px; font-size: 0.82rem; gap: 7px; }
-  .platform-pill img { height: 20px !important; }
+  .platform-pill img { width: 20px !important; height: 20px !important; max-width: 20px !important; max-height: 20px !important; }
 
   /* Share box */
   .share-actions { flex-direction: column !important; gap: 10px; align-items: stretch !important; }
@@ -2496,6 +2509,25 @@ html.nav-open, html.nav-open body { overflow: hidden; }
 .home-page .home-guest-banner .button { flex-shrink: 0; }
 .home-page .home-about-show { max-width: 760px; text-align: center; }
 .guest-profile .about-image-wrap img { width: 100%; max-width: 400px; height: auto !important; max-height: none; aspect-ratio: auto !important; object-fit: contain; margin: auto; }
+.ep-guest .details-grid { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 48px; align-items: center; }
+.ep-guest .about-image-wrap { width: 100%; max-width: 420px; margin: 0 auto; }
+.ep-guest .about-image-wrap img { min-height: 0; width: 100%; max-width: 100%; height: auto; max-height: 460px; object-fit: cover; mask-image: none; -webkit-mask-image: none; }
+.breadcrumb-nav { flex-wrap: wrap; justify-content: center; }
+.pricing-grid.single-package { grid-template-columns: minmax(0, 1fr); max-width: 600px; margin: 40px auto 0; }
+.pricing-grid.single-package .popular-pkg { transform: none; }
+.pricing-grid.single-package .popular-pkg:hover { transform: translateY(-6px); }
+@media (max-width: 1080px) {
+  .ep-guest .details-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+@media (max-width: 760px) {
+  .ep-guest .about-image-wrap { max-width: 320px; }
+  .ep-guest .about-image-wrap img { max-height: 320px; }
+  .ep-collab-cta .card-outline { padding: 24px 18px !important; }
+  .ep-collab-cta .card-outline > div { flex: 1 1 100% !important; width: 100%; }
+  .ep-collab-cta .button { width: 100%; text-align: center; }
+  .ep-timestamps { margin-top: 36px !important; padding-top: 28px !important; }
+  .why-pr-box { padding: 24px 18px !important; margin-top: 36px !important; }
+}
 @media (max-width: 700px) {
   .home-page .hero { --guest-card-width: min(76vw, 320px); min-height: 0; padding: 12px 0 24px; }
   .home-page .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 10px; }

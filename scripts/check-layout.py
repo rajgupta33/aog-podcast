@@ -88,7 +88,7 @@ for page in pages:
     html = page.read_text(encoding='utf-8')
     root = cssselect2.ElementWrapper.from_html_root(DOM(html).root)
     css = shared + '\n' + '\n'.join(re.findall(r'<style[^>]*>(.*?)</style>', html, re.S))
-    assert re.search(r'styles.css\?v=20261016-(?:layout2|home3)', html), page
+    assert re.search(r'styles.css\?v=20261121-r1', html), page
     assert "const navToggle =" not in html, page
     for width in WIDTHS:
         rules = matcher(css, width)
@@ -97,6 +97,16 @@ for page in pages:
             assert computed(gallery, rules).get('grid-row') == ('1' if width <= 700 else 'auto'), (width, 'hero guest placement')
             assert root.query('.cf-card img').etree_element.get('fetchpriority') == 'high'
             checks += 2
+        for img in root.query_all('.platform-pill img'):
+            actual = computed(img, rules)
+            expected_px = '20px' if width <= 760 else '24px'
+            assert actual.get('width') == expected_px and actual.get('height') == expected_px, (page, width, 'platform icon sizing', actual)
+            checks += 1
+        for img in root.query_all('.footer-brand .brand-logo'):
+            actual = computed(img, rules)
+            expected_px = '44px' if width <= 760 else '56px'
+            assert actual.get('width') == expected_px, (page, width, 'footer logo sizing', actual)
+            checks += 1
         for img in root.query_all('.episode-thumb img'):
             actual = computed(img, rules)
             frame = computed(img.parent, rules)

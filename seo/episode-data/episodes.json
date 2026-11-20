@@ -3,7 +3,7 @@
   "hostName": "Sadhna Sharma",
   "publisher": "Yellow Drapes LLC",
   "canonicalOrigin": "https://attitude-ofgratitude.com",
-  "totalEpisodes": 27,
+  "totalEpisodes": 29,
   "episodes": [
     {
       "episodeNumber": 1,
@@ -639,7 +639,7 @@
       "guestName": "Dr. Lamya Kamal",
       "guestRole": "Consultant Family & Lifestyle Medicine Physician",
       "hostName": "Sadhna Sharma",
-      "category": "Women?s Health & Lifestyle",
+      "category": "Women’s Health & Lifestyle",
       "datePublished": "2026-10-09",
       "uploadDate": "2026-10-09T03:30:04+00:00",
       "durationISO": "PT53M41S",
@@ -649,6 +649,48 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=Ihw073Dhodg",
       "metadataSource": "https://www.youtube.com/watch?v=Ihw073Dhodg",
       "metadataVerifiedOn": "2026-10-16"
+    },
+    {
+      "episodeNumber": 28,
+      "slug": "soul-contracts-akashic-records-mehak-marwaha-ekaa",
+      "url": "https://attitude-ofgratitude.com/episodes/soul-contracts-akashic-records-mehak-marwaha-ekaa/",
+      "title": "Soul Contracts, Akashic Records & Kids' Career Mistakes Explained | Mehak Marwaha (EKAA) | Attitude of Gratitude Podcast",
+      "headline": "Soul Contracts, Akashic Records & Kids' Career Mistakes Explained | EKAA",
+      "description": "Mehak Marwaha, founder of EKAA, joins Sadhna Sharma to discuss Akashic Records, soul contracts, karmic patterns, Tarot life coaching, and guiding children's careers in the AI era.",
+      "guestName": "Mehak Marwaha",
+      "guestRole": "Founder, EKAA | Akashic Records, Tarot Life Coach & Career Counselor",
+      "hostName": "Sadhna Sharma",
+      "category": "Spiritual Healing & Conscious Parenting",
+      "datePublished": "2026-10-25",
+      "uploadDate": "2026-10-25T18:45:17+00:00",
+      "durationISO": "PT30M37S",
+      "thumbnail": "/thumbnails/soul-contracts-akashic-records-mehak-marwaha-ekaa.webp",
+      "thumbnailUrl": "https://attitude-ofgratitude.com/thumbnails/soul-contracts-akashic-records-mehak-marwaha-ekaa.webp",
+      "youtubeId": "hbGTjaJsJwY",
+      "youtubeUrl": "https://www.youtube.com/watch?v=hbGTjaJsJwY",
+      "metadataSource": "https://www.youtube.com/watch?v=hbGTjaJsJwY",
+      "metadataVerifiedOn": "2026-11-21"
+    },
+    {
+      "episodeNumber": 29,
+      "slug": "are-women-really-happy-panel-discussion",
+      "url": "https://attitude-ofgratitude.com/episodes/are-women-really-happy-panel-discussion/",
+      "title": "Are Women Really Happy— or Just Pleasing Everyone Else? | Panel Discussion | Attitude of Gratitude Podcast",
+      "headline": "Are Women Really Happy— or Just Pleasing Everyone Else? | Panel Discussion",
+      "description": "Hosted by Sadhna Sharma at SheEO Summit × Attitude of Gratitude in Dubai, five women leaders discuss people-pleasing, boundaries, self-worth, and women's emotional well-being.",
+      "guestName": "SheEO Summit Panel",
+      "guestRole": "Dr. Lamya Kamal, Dr. Tanu Kaushal, Meher Rupa, Sweety Lulla & Ramneit",
+      "hostName": "Sadhna Sharma",
+      "category": "Women's Well-Being & Empowerment",
+      "datePublished": "2026-11-15",
+      "uploadDate": "2026-11-15T18:31:57+00:00",
+      "durationISO": "PT44M59S",
+      "thumbnail": "/thumbnails/are-women-really-happy-panel-discussion.webp",
+      "thumbnailUrl": "https://attitude-ofgratitude.com/thumbnails/are-women-really-happy-panel-discussion.webp",
+      "youtubeId": "vWgIDywDoyg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=vWgIDywDoyg",
+      "metadataSource": "https://www.youtube.com/watch?v=vWgIDywDoyg",
+      "metadataVerifiedOn": "2026-11-21"
     }
   ]
 }

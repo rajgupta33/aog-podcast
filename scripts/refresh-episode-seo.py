@@ -65,19 +65,26 @@ def main():
     text = re.sub(r'all \d+ episodes', f'all {len(episodes)} episodes', text)
     archive.write_text(text, encoding='utf-8')
 
-    # Keep the existing homepage selection, with the newest interview first.
+    # Rebuild the homepage top 6 episodes slider directly from the newest 6 episodes.
     home = ROOT / 'index.html'
     text = home.read_text(encoding='utf-8')
     latest = ordered[0]
-    marker = f'href="/episodes/{latest["slug"]}/" class="episode-card'
-    if marker not in text:
-        text = text.replace('<h3>LATEST EPISODE</h3>', '<h3>9 SEPTEMBER 2026</h3>')
-        text = text.replace('<div class="swiper-wrapper">', '<div class="swiper-wrapper">\n            <div class="swiper-slide">\n' + cards[0] + '\n            </div>', 1)
+    home_slides = []
+    for i, ep in enumerate(ordered[:6]):
+        label = 'LATEST EPISODE' if i == 0 else escape(ep['guestName'])
+        home_slides.append(
+            f'<div class="swiper-slide"><a href="/episodes/{ep["slug"]}/" class="episode-card card-solid ds-block">'
+            f'<div class="episode-thumb"><img src="{escape(ep["thumbnail"])}" alt="{escape(ep["headline"])}" width="640" height="360" loading="lazy" /><span class="play-badge">&#9654;</span></div>'
+            f'<div class="episode-body"><h3>{label}</h3><p>{escape(ep["headline"])}</p></div></a></div>'
+        )
+    text = re.sub(
+        r'(<div class="swiper-wrapper">).*?(</div><div class="swiper-pagination"></div>)',
+        lambda m: m[1] + '\n'.join(home_slides) + m[2],
+        text,
+        count=1,
+        flags=re.S,
+    )
     text = re.sub(r'all \d+ episodes', f'all {len(episodes)} episodes', text)
-    # Keep the homepage concise as new episodes are added.
-    slides = list(re.finditer(r'<div class="swiper-slide">.*?</a>\s*</div>', text, re.S))
-    for slide in reversed(slides[6:]):
-        text = text[:slide.start()] + text[slide.end():]
     text = re.sub(r'href="[^"]+"([^>]*>Watch latest episode)', lambda m: f'href="/episodes/{latest["slug"]}/"' + m[1], text, count=1)
     # The hero's latest-episode button should open the episode itself.
     text = re.sub(r'href="[^"]+"([^>]*>\s*(?:&#9654;|▶)?\s*LATEST EPISODE)', lambda m: f'href="/episodes/{latest["slug"]}/"' + m[1], text, count=1)
@@ -85,7 +92,7 @@ def main():
 
     urls = ['/', '/get-featured/', '/episodes/'] + [f'/episodes/{ep["slug"]}/' for ep in ordered]
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    xml += ''.join(f'  <url><loc>{ORIGIN}{url}</loc><lastmod>2026-10-16</lastmod></url>\n' for url in urls)
+    xml += ''.join(f'  <url><loc>{ORIGIN}{url}</loc><lastmod>2026-11-21</lastmod></url>\n' for url in urls)
     (ROOT / 'sitemap.xml').write_text(xml + '</urlset>\n', encoding='utf-8')
     print(f'Updated {len(episodes)} episode schemas, archive, homepage and sitemap.')
 
